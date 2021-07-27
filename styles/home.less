@@ -1,0 +1,319 @@
+.wrapper {
+    .banner {
+        background: #d5f7e6 url(../public/img/banner.jpg) no-repeat center;
+        background-size: auto 100%;
+        height: 560px;
+
+        .text {
+            position: absolute;
+            left: 50%;
+            width: 600px;
+            margin-left: -500px;
+            color: #033A6E;
+
+            h1 {
+                background: url(../public/img/text_h1.svg) no-repeat left center;
+                background-size: auto 100%;
+                height: 80px;
+                margin-bottom: 40px;
+                margin-top: 100px;
+            }
+
+            p {
+                font-size: 24px;
+                line-height: 1.5em;
+
+                button {
+                    font-size: 18px;
+                    font-weight: lighter;
+                    padding: 10px 20px;
+                    border: 2px solid transparent;
+                    border-radius: 3px;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    margin-top: 40px;
+
+                    &.lauch {
+                        background: #033A6E;
+                        color: #5DDA98;
+                    }
+
+                    &.docs {
+                        background: none;
+                        border: 2px solid #06366A;
+                        color: #06366A;
+                    }
+                }
+
+                a {
+                    color: #5DDA98;
+                    font-size: 18px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .data {
+        position: relative;
+        padding: 60px 0;
+
+        .decoration1 {
+            background: url(../public/img/decoration1.png) no-repeat center;
+            position: absolute;
+            background-size: 100% auto;
+            width: 120px;
+            height: 140px;
+            top: 100px;
+            left: -55px;
+        }
+
+        .decoration2 {
+            background: url(../public/img/decoration2.png) no-repeat center;
+            position: absolute;
+            background-size: 100% auto;
+            width: 120px;
+            height: 140px;
+            top: 100px;
+            right: -30px;
+        }
+
+        ul {
+            width: 1200px;
+            margin: 30px auto;
+            white-space: nowrap;
+
+            li {
+                display: inline-block;
+                width: 25%;
+                text-align: center;
+                position: relative;
+
+                &::after {
+                    border-right: 1px solid #979797;
+                    content: "0";
+                    color: transparent;
+                    height: 30px;
+                    position: absolute;
+                    right: 0;
+                    top: 50px;
+                }
+
+                h1 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 34px;
+                    color: #5DDA98;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+
+    .advantage {
+        background: #f9f9f9;
+        padding: 80px 0;
+        position: relative;
+
+        &.bg_white {
+            background: #fff;
+        }
+
+        .decoration1 {
+            background: url(../public/img/decoration1.png) no-repeat center;
+            position: absolute;
+            background-size: 100% auto;
+            width: 120px;
+            height: 140px;
+            top: 570px;
+            left: 50%;
+            margin-left: 580px;
+        }
+
+        .decoration2 {
+            background: url(../public/img/decoration2.png) no-repeat center;
+            position: absolute;
+            background-size: 100% auto;
+            width: 140px;
+            height: 140px;
+            top: 360px;
+            left: -60px;
+        }
+
+        .decoration3 {
+            background: url(../public/img/decoration2.png) no-repeat center;
+            position: absolute;
+            background-size: 100% auto;
+            width: 140px;
+            height: 140px;
+            top: 0;
+            left: 100px;
+        }
+
+        .decoration4 {
+            background: url(../public/img/decoration1.png) no-repeat center;
+            position: absolute;
+            background-size: 100% auto;
+            width: 100px;
+            height: 100px;
+            top: 360px;
+            left: 200px;
+        }
+
+        .decoration5 {
+            background: url(../public/img/decoration2.png) no-repeat center;
+            position: absolute;
+            background-size: 100% auto;
+            width: 140px;
+            height: 140px;
+            top: 230px;
+            right: -50px;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            color: #5DDA98;
+            margin-bottom: 40px;
+        }
+
+        ul {
+            width: 1200px;
+            margin: 0 auto;
+            white-space: nowrap;
+
+            li {
+                width: 33.3%;
+                display: inline-block;
+                border-radius: 5px;
+                border: 1px solid #D3DCC8;
+                box-sizing: border-box;
+                padding: 40px;
+                margin: 0 8px;
+                white-space: normal;
+                vertical-align: top;
+                height: 520px;
+
+                &:hover {
+                    background-color: #D6F6E5 !important;
+                    border: 1px solid #7CA6B3;
+                }
+
+                h1 {
+                    background: url(../public/img/advantage1.svg) no-repeat left center;
+                    height: 115px;
+                }
+
+                h2 {
+                    font-size: 28px;
+                    color: #5DDA98;
+                }
+
+                h3 {
+                    background: #54FFA1;
+                    height: 3px;
+                    width: 60px;
+                    margin-top: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                    color: #033A6E;
+                    margin-top: 60px;
+                    margin-bottom: 40px;
+                    line-height: 1.8em;
+                }
+
+                &.community {
+                    background: #f7f9f4 url(../public/img/advantage1_bg.svg) no-repeat right top;
+
+                    h1 {
+                        background: url(../public/img/advantage1.svg) no-repeat left center;
+                    }
+                }
+
+                &.swap {
+                    background: #f7f9f4 url(../public/img/advantage2_bg.svg) no-repeat right top;
+
+                    h1 {
+                        background: url(../public/img/advantage2.svg) no-repeat left center;
+                    }
+                }
+
+                &.defi {
+                    background: #f7f9f4 url(../public/img/advantage3_bg.svg) no-repeat right top;
+
+                    h1 {
+                        background: url(../public/img/advantage3.svg) no-repeat left center;
+                    }
+                }
+            }
+        }
+
+        dl {
+            white-space: nowrap;
+            text-align: center;
+
+            dt {
+                background: url(../public/img/learn1.svg) no-repeat center;
+                background-size: 100% auto;
+                width: 120px;
+                height: 160px;
+                display: inline-block;
+                margin: 50px 100px;
+
+                &.learn1 {
+                    background-image: url(../public/img/learn1.svg);
+                }
+
+                &.learn2 {
+                    background-image: url(../public/img/learn2.svg);
+                }
+
+                &.learn3 {
+                    background-image: url(../public/img/learn3.svg);
+                }
+            }
+        }
+
+        .faq {
+            width: 1200px;
+            margin: 20px auto;
+            border: 1px solid #E2E2E2;
+            padding: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            span {
+                display: block;
+                font-size: 16px;
+                &.content {
+                    display: none;
+                    color: #333;
+                    border-top: 1px solid #ccc;
+                    margin-top: 20px;
+                    padding-top: 20px;
+                }
+
+            }
+
+            &.active {
+                border: 1px solid #5DDA98;
+
+                span {
+                    color: #5DDA98;
+                }
+
+                .content {
+                    display: block;
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wrapper {}
+}

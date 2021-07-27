@@ -1,0 +1,101 @@
+body {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: alibaba-puhuiti, sans-serif;
+  overflow-x:hidden;
+  color: #596a7a;
+}
+
+.wrapper{
+
+}
+
+.header {
+  padding: 0px 24px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: #fff;
+  border-bottom: 5px solid #06386C;
+  .inner {
+    min-width: 1200px;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 95px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px;
+    line-height: 95px;
+    .logo{
+      background: url(../public/img/logo.svg) no-repeat center;
+      width: 155px;
+      height: 45px;
+      margin-right: 30px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.container {
+}
+
+
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 72px;
+  width: 100%;
+  margin:0 auto;
+  background: #000;
+  ul{
+    align-items: center;
+    display: flex;
+    li{
+      color: rgb(127, 124, 141);
+      padding: 0 10px;
+      text-decoration: none;
+      cursor: pointer;
+      i{
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        &.medium{
+          background: url(../public/img/icon_medium.svg) no-repeat center;
+          background-size: 100% auto;
+        }
+        &.medium:hover{
+          background: url(../public/img/icon_medium_hover.svg) no-repeat center;
+          background-size: 100% auto;
+        }
+        &.twitter{
+          background: url(../public/img/icon_twitter.svg) no-repeat center;
+          background-size: 100% auto;
+        }
+        &.twitter:hover{
+          background: url(../public/img/icon_twitter_hover.svg) no-repeat center;
+          background-size: 100% auto;
+        }
+        &.telegram{
+          background: url(../public/img/icon_telegram.svg) no-repeat center;
+          background-size: 100% auto;
+        }
+        &.telegram:hover{
+          background: url(../public/img/icon_telegram_hover.svg) no-repeat center;
+          background-size: 100% auto;
+        }
+        &.github{
+          background: url(../public/img/icon_github.svg) no-repeat center;
+          background-size: 100% auto;
+        }
+        &.github:hover{
+          background: url(../public/img/icon_github_hover.svg) no-repeat center;
+          background-size: 100% auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+}
