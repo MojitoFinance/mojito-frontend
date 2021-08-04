@@ -58,8 +58,8 @@
                         <line x1="9" y1="1" x2="22" y2="46" id="Fill-37" fill="#D3EADD" mask="url(#mask-4)"></line>
                         <path d="M22.2150208,47 C21.8777093,47 21.5664415,46.7772034 21.4641498,46.4318368 L8.03350613,1.02825536 C7.90862245,0.605963266 8.14364224,0.161008487 8.55877066,0.0339697479 C8.97295774,-0.0927497982 9.41099195,0.146006425 9.53587563,0.567979321 L22.9665193,45.9715608 C23.091403,46.3938529 22.8560694,46.8388076 22.4412548,46.9658464 C22.365948,46.9888283 22.2897,47 22.2150208,47" id="Fill-38" fill="#231916" mask="url(#mask-4)"></path>
                     </g>
-                    <text id="Total-MJT-Supply" font-family="Alibaba-PuHuiTi-M, Alibaba PuHuiTi" font-size="26" font-weight="400" fill="#033A6E">
-                        <tspan x="82" y="36">Total MJT Supply</tspan>
+                    <text id="Total-MJT-Supply" font-family="Helvetica" font-size="26" font-weight="normal" fill="#033A6E">
+                        <tspan x="82" y="34">Total MJT Supply</tspan>
                     </text>
                 </g>
             </g>

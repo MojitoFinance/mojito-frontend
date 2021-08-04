@@ -46,10 +46,12 @@ body {
   display: flex;
   justify-content: center;
   height: 72px;
-  width: 100%;
+  width: 101%;
   margin:0 auto;
-  background: #000;
+  background: #5DDA98;
   ul{
+     position: absolute;
+     right: 0;
     align-items: center;
     display: flex;
     li{
@@ -61,6 +63,7 @@ body {
         display: inline-block;
         width: 26px;
         height: 26px;
+        color: #fff;
         &.medium{
           background: url(../public/img/icon_medium.svg) no-repeat center;
           background-size: 100% auto;
@@ -96,6 +99,12 @@ body {
       }
     }
   }
+  .leftfont{
+    position: absolute;
+    left: 54px;
+    font-size: 24px;
+    color: #033A6E;
+}
 }
 
 @media screen and (max-width: 500px) {

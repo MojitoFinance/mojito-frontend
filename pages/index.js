@@ -6,6 +6,7 @@ import { Link, withTranslation } from "../i18n";
 import HeaderFooter from "../layout/HeaderFooter";
 import classNames from "classnames/bind";
 import styles from "../styles/home.less";
+import CountUp from 'react-countup';
 const cx = classNames.bind(styles);
 import Web3 from 'web3';
 import { getAccountBalance, getSymbols } from "../api/api"
@@ -35,7 +36,9 @@ const Home = ({ t }) => {
                         <p>MOJITO.finance</p>
                         <p>Future finance leader,The future of trading.</p>
                         <p>
-                            <button className={styles.lauch}>Launch App</button>
+                            <Link href="/#/home">
+                                <button className={styles.lauch}>Launch App</button>
+                            </Link>
                             <button className={styles.docs}>Mojito Docs</button>
                             <Link href="/" >FAQs</Link>
                         </p>
@@ -46,19 +49,19 @@ const Home = ({ t }) => {
                     <i className={styles.decoration2}></i>
                     <ul>
                         <li>
-                            <p>¥12,211,901K+</p>
+                            <CountUp start={27621} end={39824} separator="," decimal="."  decimals="1" prefix="$" suffix="+"/>
                             <h1>Total Value Locked</h1>
                         </li>
                         <li>
-                            <p>¥12,211,901K+</p>
+                        <CountUp start={27621} end={39824} separator="," decimal="."  decimals="1" prefix="$" suffix="+"/>
                             <h1>Total MJT Supply</h1>
                         </li>
                         <li>
-                            <p>¥12,211,901K+</p>
+                        <CountUp start={27621} end={39824} separator="," decimal="."  decimals="1" prefix="$" suffix="+"/>
                             <h1>Liquidity Providers</h1>
                         </li>
                         <li>
-                            <p>¥12,211,901K+</p>
+                        <CountUp start={27621} end={39824} separator="," decimal="."  decimals="1" prefix="$" suffix="+"/>
                             <h1>All Time Trades</h1>
                         </li>
                     </ul>

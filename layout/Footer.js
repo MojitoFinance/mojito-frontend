@@ -4,6 +4,7 @@ import styles from '../styles/layout.less'
 const Footer = ({ t }) => {
     return (
         <footer className={styles.footer}>
+            <div className={styles.leftfont}>Join our community</div>
             <ul>
                 <Link href="/">
                     <li>

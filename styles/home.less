@@ -1,366 +1,537 @@
 .wrapper {
-    .banner {
-        background: #d5f7e6 url(../public/img/banner.jpg) no-repeat center;
+  .banner {
+    background: #d5f7e6 url(../public/img/banner.jpg) no-repeat center;
+    background-size: auto 100%;
+    height: 450px;
+    position: relative;
+    z-index: 999;
+    .cow {
+      background: url(../public/img/cow.png) no-repeat center;
+      width: 650px;
+      height: 450px;
+      position: absolute;
+      background-size: 465px;
+      top:7px;
+      left: 85%;
+      transition: width 10s linear 0s;
+      /* Firefox 4 */
+      -moz-transition: width 10s linear 0s;
+      /* Safari and Chrome */
+      -webkit-transition: width 10s linear 0s;
+      /* Opera */
+      -o-transition: width 10s linear 0s;
+
+      /* 实现角度变化*/
+      transform: rotate(4deg);
+      -webkit-transform: rotate(4deg);
+      /* Safari 和 Chrome */
+      -moz-transform: rotate(4deg);
+
+      @keyframes myfirst {
+        0% {
+          transform: scale(1);
+          transform: scale(1)
+        }
+
+        70%,
+        73% {
+          transform: scale(1) rotate(-1deg);
+          transform: scale(1) rotate(-1deg)
+        }
+
+        77%,
+        83%,
+        90%,
+        97% {
+          transform: scale(1) rotate(1deg);
+          transform: scale(1) rotate(1deg)
+        }
+
+        80%,
+        87%,
+        93% {
+          transform: scale(1) rotate(-1deg);
+          transform: scale(1) rotate(-1deg)
+        }
+
+        100% {
+          transform: scale(1) rotate(0);
+          transform: scale(1) rotate(0)
+        }
+      }
+
+      @-moz-keyframes myfirst
+
+      /* Firefox */
+        {
+        0% {
+          transform: scale(1);
+          transform: scale(1)
+        }
+
+        70%,
+        73% {
+          transform: scale(0.9) rotate(-3deg);
+          transform: scale(0.9) rotate(-3deg)
+        }
+
+        77%,
+        83%,
+        90%,
+        97% {
+          transform: scale(1.1) rotate(3deg);
+          transform: scale(1.1) rotate(3deg)
+        }
+
+        80%,
+        87%,
+        93% {
+          transform: scale(1.1) rotate(-3deg);
+          transform: scale(1.1) rotate(-3deg)
+        }
+
+        100% {
+          transform: scale(1) rotate(0);
+          transform: scale(1) rotate(0)
+        }
+      }
+
+      @-webkit-keyframes myfirst
+
+      /* Safari 和 Chrome */
+        {
+        0% {
+          transform: scale(1);
+          transform: scale(1)
+        }
+
+        70%,
+        73% {
+          transform: scale(0.9) rotate(-3deg);
+          transform: scale(0.9) rotate(-3deg)
+        }
+
+        77%,
+        83%,
+        90%,
+        97% {
+          transform: scale(1.1) rotate(3deg);
+          transform: scale(1.1) rotate(3deg)
+        }
+
+        80%,
+        87%,
+        93% {
+          transform: scale(1.1) rotate(-3deg);
+          transform: scale(1.1) rotate(-3deg)
+        }
+
+        100% {
+          transform: scale(1) rotate(0);
+          transform: scale(1) rotate(0)
+        }
+      }
+
+      @-o-keyframes myfirst
+
+      /* Opera */
+        {
+        0% {
+          transform: scale(1);
+          transform: scale(1)
+        }
+
+        70%,
+        73% {
+          transform: scale(0.9) rotate(-3deg);
+          transform: scale(0.9) rotate(-3deg)
+        }
+
+        77%,
+        83%,
+        90%,
+        97% {
+          transform: scale(1.1) rotate(3deg);
+          transform: scale(1.1) rotate(3deg)
+        }
+
+        80%,
+        87%,
+        93% {
+          transform: scale(1.1) rotate(-3deg);
+          transform: scale(1.1) rotate(-3deg)
+        }
+
+        100% {
+          transform: scale(1) rotate(0);
+          transform: scale(1) rotate(0)
+        }
+      }
+
+      -webkit-animation: myfirst 3s both infinite;
+      -moz-animation: myfirst 3s both infinite;
+      -ms-animation: myfirst 3s both infinite;
+      animation: myfirst 3s both infinite;
+    }
+
+    .text {
+      position: absolute;
+      left: 46%;
+      width: 600px;
+      margin-left: -500px;
+      color: #033A6E;
+
+      h1 {
+        background: url(../public/img/text_h1.svg) no-repeat left center;
         background-size: auto 100%;
-        height: 450px;
-        position: relative;
+        height: 80px;
+        margin-bottom: 40px;
+        margin-top: 85px;
+      }
 
-        .cow{
-            background: url(../public/img/cow.png) no-repeat center;
-            width: 670px;
-            height: 470px;
-            position: absolute;
-            background-size: 585px;
-            left: 85%;
+      p {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.5em;
+        font-family: alibaba-puhuiti, sans-serif;
+        font-weight: 400;
+
+        button {
+          font-size: 18px;
+          font-weight: lighter;
+          padding: 10px 20px;
+          border: 2px solid transparent;
+          border-radius: 3px;
+          margin-right: 20px;
+          cursor: pointer;
+          margin-top: 40px;
+
+          &.lauch {
+            background: #033A6E;
+            color: #5DDA98;
+            font-weight: 500;
+            width: 180px;
+          }&:hover{
+              color: #fff;
+          }
+
+          &.docs {
+            background: none;
+            border: 2px solid #06366A;
+            color: #06366A;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 12px;
+            width: 150px;
+          }
         }
 
-        .text {
-            position: absolute;
-            left: 46%;
-            width: 600px;
-            margin-left: -500px;
-            color: #033A6E;
-
-            h1 {
-                background: url(../public/img/text_h1.svg) no-repeat left center;
-                background-size: auto 100%;
-                height: 80px;
-                margin-bottom: 40px;
-                margin-top: 85px;
-            }
-
-            p {
-                font-size: 24px;
-                font-weight: 300;
-                line-height: 1.5em;
-                font-family: alibaba-puhuiti, sans-serif;
-                font-weight: 400;
-
-                button {
-                    font-size: 18px;
-                    font-weight: lighter;
-                    padding: 10px 20px;
-                    border: 2px solid transparent;
-                    border-radius: 3px;
-                    margin-right: 20px;
-                    cursor: pointer;
-                    margin-top: 40px;
-
-                    &.lauch {
-                        background: #033A6E;
-                        color: #5DDA98;
-                        font-weight: 500;
-                        width: 180px;
-                    }
-
-                    &.docs {
-                        background: none;
-                        border: 2px solid #06366A;
-                        color: #06366A;
-                        font-size: 16px;
-                        font-weight: 500;
-                        padding: 12px;
-                        width: 150px;
-                    }
-                }
 
 
-
-                a {
-                    color: #5DDA98;
-                    font-size: 18px;
-                    padding: 0 10px;
-                }
-            }
+        a {
+          color: #5DDA98;
+          font-size: 18px;
+          padding: 0 10px;
         }
+      }
+    }
+  }
+
+  .faq {
+    color: #033A6E;
+  }
+
+  .data {
+    position: relative;
+    padding: 20px 0;
+
+    .decoration1 {
+      background: url(../public/img/decoration1.png) no-repeat center;
+      position: absolute;
+      background-size: 100% auto;
+      width: 120px;
+      height: 140px;
+      top: 100px;
+      left: -55px;
     }
 
-    .faq{
-        color: #033A6E;
+    .decoration2 {
+      background: url(../public/img/decoration2.png) no-repeat center;
+      position: absolute;
+      background-size: 100% auto;
+      width: 120px;
+      height: 140px;
+      top: 100px;
+      right: -30px;
     }
 
-    .data {
-        position: relative;
-        padding: 20px 0;
+    ul {
+      width: 1300px;
+      margin: 30px auto;
+      white-space: nowrap;
 
-        .decoration1 {
-            background: url(../public/img/decoration1.png) no-repeat center;
-            position: absolute;
-            background-size: 100% auto;
-            width: 120px;
-            height: 140px;
-            top: 100px;
-            left: -55px;
-        }
-
-        .decoration2 {
-            background: url(../public/img/decoration2.png) no-repeat center;
-            position: absolute;
-            background-size: 100% auto;
-            width: 120px;
-            height: 140px;
-            top: 100px;
-            right: -30px;
-        }
-
-        ul {
-            width: 1300px;
-            margin: 30px auto;
-            white-space: nowrap;
-
-            li {
-                display: inline-block;
-                width: 25%;
-                text-align: center;
-                position: relative;
-
-                &::after {
-                    border-right: 1px solid #979797;
-                    content: "0";
-                    color: transparent;
-                    height: 30px;
-                    position: absolute;
-                    right: 0;
-                    top: 50px;
-                }
-
-                h1 {
-                    font-size: 16px;
-                    font-family: alibaba-puhuiti, sans-serif;
-                    font-weight: 600;    
-                }
-
-                p {
-                    font-size: 34px;
-                    color: #5DDA98;
-                    padding: 20px 0;
-                    font-weight: 700;
-                    font-family: alibaba-puhuiti, sans-serif;  
-                }
-            }
-        }
-    }
-
-    .advantage {
-        background: #f9f9f9;
-        padding: 80px 0;
+      li {
+        display: inline-block;
+        width: 25%;
+        text-align: center;
         position: relative;
 
-        &.bg_white {
-            background: #fff;
-        }
-
-        .decoration1 {
-            background: url(../public/img/decoration1.png) no-repeat center;
-            position: absolute;
-            background-size: 100% auto;
-            width: 120px;
-            height: 140px;
-            top: 570px;
-            left: 50%;
-            margin-left: 580px;
-        }
-
-        .decoration2 {
-            background: url(../public/img/decoration2.png) no-repeat center;
-            position: absolute;
-            background-size: 100% auto;
-            width: 140px;
-            height: 140px;
-            top: 360px;
-            left: -60px;
-        }
-
-        .decoration3 {
-            background: url(../public/img/decoration2.png) no-repeat center;
-            position: absolute;
-            background-size: 100% auto;
-            width: 140px;
-            height: 140px;
-            top: 0;
-            left: 100px;
-        }
-
-        .decoration4 {
-            background: url(../public/img/decoration1.png) no-repeat center;
-            position: absolute;
-            background-size: 100% auto;
-            width: 100px;
-            height: 100px;
-            top: 360px;
-            left: 200px;
-        }
-
-        .decoration5 {
-            background: url(../public/img/decoration2.png) no-repeat center;
-            position: absolute;
-            background-size: 100% auto;
-            width: 140px;
-            height: 140px;
-            top: 230px;
-            right: -50px;
+        &::after {
+          border-right: 1px solid #979797;
+          content: "0";
+          color: transparent;
+          height: 30px;
+          position: absolute;
+          right: 0;
+          top: 50px;
         }
 
         h1 {
-            font-size: 36px;
-            text-align: center;
-            color: #5DDA98;
-            margin-bottom: 40px;
-            font-family: alibaba-puhuiti, sans-serif;
-            font-weight: 700;
+          font-size: 16px;
+          font-family: alibaba-puhuiti, sans-serif;
+          font-weight: 600;
         }
 
-        ul {
-            width: 1200px;
-            margin: 0 auto;
-            white-space: nowrap;
-
-            li {
-                width: 385px;
-                display: inline-block;
-                border-radius: 5px;
-                border: 1px solid #D3DCC8;
-                box-sizing: border-box;
-                padding: 40px;
-                margin: 0 8px;
-                white-space: normal;
-                vertical-align: top;
-                height: 480px;
-
-                &:hover {
-                    background-color: #D6F6E5 !important;
-                    border: 1px solid #7CA6B3;
-                }
-
-                h1 {
-                    background: url(../public/img/advantage1.svg) no-repeat left center;
-                    height: 115px;
-                }
-
-                h2 {
-                    font-size: 28px;
-                    color: #5DDA98;
-                    font-weight: 600;
-                    font-family: alibaba-puhuiti, sans-serif;    
-                }
-
-                h3 {
-                    background: #54FFA1;
-                    height: 3px;
-                    width: 60px;
-                    margin-top: 40px;
-                }
-
-                p {
-                    font-size: 20px;
-                    color: #033A6E;
-                    margin-top: 25px;
-                    margin-bottom: 40px;
-                    font-weight: normal;
-                    line-height: 1.8em;
-                    font-family: alibaba-puhuiti, sans-serif;
-                    font-weight: 400;    
-                }
-
-                &.community {
-                    background: #f7f9f4 url(../public/img/advantage1_bg.svg) no-repeat right top;
-
-                    h1 {
-                        background: url(../public/img/advantage1.svg) no-repeat left center;
-                        width: 90px;
-                        background-size: 60px;
-                        margin-bottom: 10px;
-                    }
-                }
-
-                &.swap {
-                    background: #f7f9f4 url(../public/img/advantage2_bg.svg) no-repeat right top;
-
-                    h1 {
-                        background: url(../public/img/advantage2.svg) no-repeat left center;
-                        width: 90px;
-                        background-size: 60px;
-                        margin-bottom: 10px;
-                    }
-                }
-
-                &.defi {
-                    background: #f7f9f4 url(../public/img/advantage3_bg.svg) no-repeat right top;
-
-                    h1 {
-                        background: url(../public/img/advantage3.svg) no-repeat left center;
-                        width: 90px;
-                        background-size: 60px;
-                        margin-bottom: 10px;
-                    }
-                }
-            }
+    span {
+          font-size: 34px;
+          color: #5DDA98;
+          padding: 20px 0;
+          font-weight: 700;
+          font-family: alibaba-puhuiti, sans-serif;
         }
-
-        dl {
-            white-space: nowrap;
-            text-align: center;
-
-            dt {
-                background: url(../public/img/learn1.svg) no-repeat center;
-                background-size: 100% auto;
-                width: 350px;
-                height: 150px;
-                display: inline-block;
-                margin: 10px 20px;
-
-                &.learn1 {
-                    background-image: url(../public/img/more_1.svg);
-                }
-
-                &.learn2 {
-                    background-image: url(../public/img/more_2.svg);
-                }
-
-                &.learn3 {
-                    background-image: url(../public/img/more_3.svg);
-                }
-            }
-        }
-
-        .faq {
-            width: 1200px;
-            margin: 20px auto;
-            border: 1px solid #E2E2E2;
-            padding: 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            span {
-                display: block;
-                font-size: 16px;
-                font-family: alibaba-puhuiti, sans-serif;
-                font-weight: 400;
-                &.content {
-                    display: none;
-                    color: #333;
-                    border-top: 1px solid #ccc;
-                    margin-top: 20px;
-                    padding-top: 20px;
-                }
-
-            }
-
-            &.active {
-                border: 1px solid #5DDA98;
-
-                span {
-                    color: #5DDA98;
-                }
-
-                .content {
-                    display: block;
-                    color: #333;
-                }
-            }
-        }
+      }
     }
+  }
+
+  .advantage {
+    background: #f9f9f9;
+    padding: 80px 0;
+    position: relative;
+
+    &.bg_white {
+      background: #fff;
+    }
+
+    .decoration1 {
+      background: url(../public/img/decoration1.png) no-repeat center;
+      position: absolute;
+      background-size: 100% auto;
+      width: 120px;
+      height: 140px;
+      top: 570px;
+      left: 50%;
+      margin-left: 580px;
+    }
+
+    .decoration2 {
+      background: url(../public/img/decoration2.png) no-repeat center;
+      position: absolute;
+      background-size: 100% auto;
+      width: 140px;
+      height: 140px;
+      top: 360px;
+      left: -60px;
+    }
+
+    .decoration3 {
+      background: url(../public/img/decoration2.png) no-repeat center;
+      position: absolute;
+      background-size: 100% auto;
+      width: 140px;
+      height: 140px;
+      top: 0;
+      left: 100px;
+    }
+
+    .decoration4 {
+      background: url(../public/img/decoration1.png) no-repeat center;
+      position: absolute;
+      background-size: 100% auto;
+      width: 100px;
+      height: 100px;
+      top: 360px;
+      left: 200px;
+    }
+
+    .decoration5 {
+      background: url(../public/img/decoration2.png) no-repeat center;
+      position: absolute;
+      background-size: 100% auto;
+      width: 140px;
+      height: 140px;
+      top: 230px;
+      right: -50px;
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      color: #5DDA98;
+      margin-bottom: 40px;
+      font-family: alibaba-puhuiti, sans-serif;
+      font-weight: 700;
+    }
+
+    ul {
+      width: 1200px;
+      margin: 0 auto;
+      white-space: nowrap;
+
+      li {
+        width: 385px;
+        display: inline-block;
+        border-radius: 5px;
+        border: 1px solid #D3DCC8;
+        box-sizing: border-box;
+        padding: 40px;
+        margin: 0 8px;
+        white-space: normal;
+        vertical-align: top;
+        height: 480px;
+
+        &:hover {
+          background-color: #D6F6E5 !important;
+          border: 1px solid #7CA6B3;
+          box-shadow: 1px 2px 10px #5DDA98;
+        }
+        h1 {
+          background: url(../public/img/advantage1.svg) no-repeat left center;
+          height: 115px;
+        }
+        h2 {
+          font-size: 28px;
+          color: #5DDA98;
+          font-weight: 600;
+          font-family: alibaba-puhuiti, sans-serif;
+        }
+
+        h3 {
+          background: #54FFA1;
+          height: 3px;
+          width: 60px;
+          margin-top: 40px;
+        }
+
+        p {
+          font-size: 20px;
+          color: #033A6E;
+          margin-top: 25px;
+          margin-bottom: 40px;
+          font-weight: normal;
+          line-height: 1.8em;
+          font-family: alibaba-puhuiti, sans-serif;
+          font-weight: 400;
+        }
+
+        &.community {
+          background: #f7f9f4 url(../public/img/advantage1_bg.svg) no-repeat right top;
+          h1 {
+            background: url(../public/img/advantage1.svg) no-repeat left center;
+            width: 90px;
+            background-size: 60px;
+            margin-bottom: 10px;
+          }
+          &:hover{
+            h1{
+                background: url(../public/img/advantage1hover.gif) no-repeat center !important;
+                height: 157px;
+                width: 90px;
+            }
+        }
+        }
+
+        &.swap {
+          background: #f7f9f4 url(../public/img/advantage2_bg.svg) no-repeat right top;
+
+          h1 {
+            background: url(../public/img/advantage2.svg) no-repeat left center;
+            width: 90px;
+            background-size: 60px;
+            margin-bottom: 10px;
+          }
+        }
+
+        &.defi {
+          background: #f7f9f4 url(../public/img/advantage3_bg.svg) no-repeat right top;
+
+          h1 {
+            background: url(../public/img/advantage3.svg) no-repeat left center;
+            width: 90px;
+            background-size: 60px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    dl {
+      white-space: nowrap;
+      text-align: center;
+
+      dt {
+        background: url(../public/img/learn1.svg) no-repeat center;
+        background-size: 100% auto;
+        width: 350px;
+        height: 130px;
+        display: inline-block;
+        margin: 10px 20px;
+
+        &.learn1 {
+          background-image: url(../public/img/more_1.png);
+        }&:hover{
+            // box-shadow: 1px 1px 30px #cdcdcd;
+        }
+
+        &.learn2 {
+          background-image: url(../public/img/more_2.svg);
+        }
+
+        &.learn3 {
+          background-image: url(../public/img/more_3.svg);
+        }
+      }
+    }
+
+    .faq {
+      width: 1200px;
+      margin: 20px auto;
+      border: 1px solid #E2E2E2;
+      padding: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      span {
+        display: block;
+        font-size: 16px;
+        font-family: alibaba-puhuiti, sans-serif;
+        font-weight: 400;
+
+        &.content {
+          display: none;
+          color: #333;
+          border-top: 1px solid #ccc;
+          margin-top: 20px;
+          padding-top: 20px;
+        }
+
+      }
+
+      &.active {
+        border: 1px solid #5DDA98;
+
+        span {
+          color: #5DDA98;
+        }
+
+        .content {
+          display: block;
+          color: #333;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .wrapper {}
+  .wrapper {}
 }
