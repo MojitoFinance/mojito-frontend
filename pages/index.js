@@ -30,13 +30,14 @@ const Home = ({ t }) => {
             <div className={styles.wrapper}>
                 <div className={styles.banner}>
                     <div className={styles.text}>
+                        <div className={styles.cow}></div>
                         <h1></h1>
                         <p>MOJITO.finance</p>
                         <p>Future finance leader,The future of trading.</p>
                         <p>
                             <button className={styles.lauch}>Launch App</button>
                             <button className={styles.docs}>Mojito Docs</button>
-                            <Link href="/">FAQs</Link>
+                            <Link href="/" >FAQs</Link>
                         </p>
                     </div>
                 </div>
@@ -103,9 +104,11 @@ const Home = ({ t }) => {
                 </div>
                 <div className={cx(styles.advantage, styles.bg_white)}>
                     <h1>Frequently asked questions</h1>
-                    <div className={cx(styles.faq,{active: activeIndex == 1 })}>
+                    < div className = {
+                        cx(styles.faq, styles.active )
+                    } >
                         <span>1.What is Mojito Finance?</span>
-                        <span className={styles.content}>这里需要展开，告诉开发展开后的效果是什么样的。</span>
+                        <span po mn className={styles.content}>这里需要展开，告诉开发展开后的效果是什么样的。</span>
                     </div>
                     <div className={cx(styles.faq,{active: activeIndex == 2 })}>
                         <span>1.What is Mojito Finance?</span>

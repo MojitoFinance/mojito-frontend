@@ -2,11 +2,21 @@
     .banner {
         background: #d5f7e6 url(../public/img/banner.jpg) no-repeat center;
         background-size: auto 100%;
-        height: 560px;
+        height: 450px;
+        position: relative;
+
+        .cow{
+            background: url(../public/img/cow.png) no-repeat center;
+            width: 670px;
+            height: 470px;
+            position: absolute;
+            background-size: 585px;
+            left: 85%;
+        }
 
         .text {
             position: absolute;
-            left: 50%;
+            left: 46%;
             width: 600px;
             margin-left: -500px;
             color: #033A6E;
@@ -16,12 +26,15 @@
                 background-size: auto 100%;
                 height: 80px;
                 margin-bottom: 40px;
-                margin-top: 100px;
+                margin-top: 85px;
             }
 
             p {
                 font-size: 24px;
+                font-weight: 300;
                 line-height: 1.5em;
+                font-family: alibaba-puhuiti, sans-serif;
+                font-weight: 400;
 
                 button {
                     font-size: 18px;
@@ -36,14 +49,22 @@
                     &.lauch {
                         background: #033A6E;
                         color: #5DDA98;
+                        font-weight: 500;
+                        width: 180px;
                     }
 
                     &.docs {
                         background: none;
                         border: 2px solid #06366A;
                         color: #06366A;
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 12px;
+                        width: 150px;
                     }
                 }
+
+
 
                 a {
                     color: #5DDA98;
@@ -54,9 +75,13 @@
         }
     }
 
+    .faq{
+        color: #033A6E;
+    }
+
     .data {
         position: relative;
-        padding: 60px 0;
+        padding: 20px 0;
 
         .decoration1 {
             background: url(../public/img/decoration1.png) no-repeat center;
@@ -79,7 +104,7 @@
         }
 
         ul {
-            width: 1200px;
+            width: 1300px;
             margin: 30px auto;
             white-space: nowrap;
 
@@ -101,12 +126,16 @@
 
                 h1 {
                     font-size: 16px;
+                    font-family: alibaba-puhuiti, sans-serif;
+                    font-weight: 600;    
                 }
 
                 p {
                     font-size: 34px;
                     color: #5DDA98;
                     padding: 20px 0;
+                    font-weight: 700;
+                    font-family: alibaba-puhuiti, sans-serif;  
                 }
             }
         }
@@ -177,6 +206,8 @@
             text-align: center;
             color: #5DDA98;
             margin-bottom: 40px;
+            font-family: alibaba-puhuiti, sans-serif;
+            font-weight: 700;
         }
 
         ul {
@@ -185,7 +216,7 @@
             white-space: nowrap;
 
             li {
-                width: 33.3%;
+                width: 385px;
                 display: inline-block;
                 border-radius: 5px;
                 border: 1px solid #D3DCC8;
@@ -194,7 +225,7 @@
                 margin: 0 8px;
                 white-space: normal;
                 vertical-align: top;
-                height: 520px;
+                height: 480px;
 
                 &:hover {
                     background-color: #D6F6E5 !important;
@@ -209,6 +240,8 @@
                 h2 {
                     font-size: 28px;
                     color: #5DDA98;
+                    font-weight: 600;
+                    font-family: alibaba-puhuiti, sans-serif;    
                 }
 
                 h3 {
@@ -221,9 +254,12 @@
                 p {
                     font-size: 20px;
                     color: #033A6E;
-                    margin-top: 60px;
+                    margin-top: 25px;
                     margin-bottom: 40px;
+                    font-weight: normal;
                     line-height: 1.8em;
+                    font-family: alibaba-puhuiti, sans-serif;
+                    font-weight: 400;    
                 }
 
                 &.community {
@@ -231,6 +267,9 @@
 
                     h1 {
                         background: url(../public/img/advantage1.svg) no-repeat left center;
+                        width: 90px;
+                        background-size: 60px;
+                        margin-bottom: 10px;
                     }
                 }
 
@@ -239,6 +278,9 @@
 
                     h1 {
                         background: url(../public/img/advantage2.svg) no-repeat left center;
+                        width: 90px;
+                        background-size: 60px;
+                        margin-bottom: 10px;
                     }
                 }
 
@@ -247,6 +289,9 @@
 
                     h1 {
                         background: url(../public/img/advantage3.svg) no-repeat left center;
+                        width: 90px;
+                        background-size: 60px;
+                        margin-bottom: 10px;
                     }
                 }
             }
@@ -259,21 +304,21 @@
             dt {
                 background: url(../public/img/learn1.svg) no-repeat center;
                 background-size: 100% auto;
-                width: 120px;
-                height: 160px;
+                width: 350px;
+                height: 150px;
                 display: inline-block;
-                margin: 50px 100px;
+                margin: 10px 20px;
 
                 &.learn1 {
-                    background-image: url(../public/img/learn1.svg);
+                    background-image: url(../public/img/more_1.svg);
                 }
 
                 &.learn2 {
-                    background-image: url(../public/img/learn2.svg);
+                    background-image: url(../public/img/more_2.svg);
                 }
 
                 &.learn3 {
-                    background-image: url(../public/img/learn3.svg);
+                    background-image: url(../public/img/more_3.svg);
                 }
             }
         }
@@ -288,6 +333,8 @@
             span {
                 display: block;
                 font-size: 16px;
+                font-family: alibaba-puhuiti, sans-serif;
+                font-weight: 400;
                 &.content {
                     display: none;
                     color: #333;

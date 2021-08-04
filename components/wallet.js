@@ -18,6 +18,9 @@ const WalletMask = (props) => {
 
     return (
         <>
+            <button className={styles.getMTJ} onClick={() => showWallet(false)}>
+                {t("Get MJT")}
+            </button>
             <button className={styles.button} onClick={() => showWallet(false)}>
                 {t("connect-wallet")}
             </button>
