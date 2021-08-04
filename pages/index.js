@@ -72,20 +72,20 @@ const Home = ({ t }) => {
                     <h1>Mojito Swap Advantage</h1>
                     <ul>
                         <li className={styles.community}>
-                            <h1></h1>
+                            <h1><img src="/img/advantage1hover.gif" /></h1>
                             <h2>Community Owned</h2>
                             <h3></h3>
                             <p>Mojito is owned by the community，Community Autonomous Exchange</p>
                         </li>
                         <li className={styles.swap}>
-                            <h1></h1>
+                            <h1><img src="/img/advantage2hover.gif" /></h1>
                             <h2>Swap anytime and
                                 Anywhere</h2>
                             <h3></h3>
                             <p>Swap tokens and add liquidity,Not subject to centralizedservices</p>
                         </li>
                         <li className={styles.defi}>
-                            <h1></h1>
+                            <h1><img src="/img/advantage3hover.gif" /></h1>
                             <h2>More interestings
                                 about Defi</h2>
                             <h3></h3>
@@ -100,7 +100,11 @@ const Home = ({ t }) => {
                     <i className={styles.decoration5}></i>
                     <h1>Learn more about MojitoSwap</h1>
                     <dl>
-                        <dt className={styles.learn1}></dt>
+                        <dt className={styles.learn1}>
+                            <div className={styles.box_item}>
+                                <img src="/img/learn_1.svg" />
+                            </div>
+                        </dt>
                         <dt className={styles.learn2}></dt>
                         <dt className={styles.learn3}></dt>
                     </dl>

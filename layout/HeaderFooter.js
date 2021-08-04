@@ -45,7 +45,6 @@ const HeaderFooter = (props) => {
               
           </Head>
           <Header activeIndex={activeIndex} />
-          Join our community
           <main className={styles.container}>{props.children}</main>
           <Footer />
       </div>

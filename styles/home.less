@@ -213,6 +213,7 @@
             width: 180px;
           }&:hover{
               color: #fff;
+              background: #044f97;
           }
 
           &.docs {
@@ -223,6 +224,11 @@
             font-weight: 500;
             padding: 12px;
             width: 150px;
+          }
+          &.docs:hover{
+            border: 2px solid #5dda96;
+    color: #5dda97;
+    background: #06366a;
           }
         }
 
@@ -430,12 +436,23 @@
             width: 90px;
             background-size: 60px;
             margin-bottom: 10px;
+            img{
+              display: none;
+            }
           }
           &:hover{
             h1{
-                background: url(../public/img/advantage1hover.gif) no-repeat center !important;
-                height: 157px;
+                // background: url(../public/img/advantage1hover.gif) no-repeat center !important;
+                background: none;
+                height: 115px;
+                background-size: 60px;
                 width: 90px;
+                img{
+                  display: block;
+                  width: 60px;
+                  padding: 15px;
+                  padding-left: 0px;
+                }
             }
         }
         }
@@ -448,6 +465,25 @@
             width: 90px;
             background-size: 60px;
             margin-bottom: 10px;
+            img{
+              display: none;
+            }
+          }
+          &:hover{
+            h1{
+              // background: url(../public/img/advantage2hover.gif) no-repeat center !important;
+              background: none;
+              height: 115px;
+              background-size: 60px;
+              width: 90px;
+              img{
+                display: block;
+                width: 75px;
+                padding: 15px;
+                padding-left: 0px;
+                padding-top: 11px;
+              }
+          }
           }
         }
 
@@ -459,6 +495,25 @@
             width: 90px;
             background-size: 60px;
             margin-bottom: 10px;
+            img{
+              display: none;
+            }
+          }
+          &:hover{
+            h1{
+              // background: url(../public/img/advantage2hover.gif) no-repeat center !important;
+              background: none;
+              height: 115px;
+              background-size: 60px;
+              width: 90px;
+              img{
+                display: block;
+                width: 60px;
+                padding: 15px;
+                padding-left: 0px;
+                padding-top: 25px;
+              }
+          }
           }
         }
       }
@@ -478,6 +533,11 @@
 
         &.learn1 {
           background-image: url(../public/img/more_1.png);
+          // box-shadow: 5px 5px 0px #d5ede2;
+          // background: #d6f6e5;
+          // height: 125px;
+          // width: 340px;
+          // border-radius: 10px;
         }&:hover{
             // box-shadow: 1px 1px 30px #cdcdcd;
         }
