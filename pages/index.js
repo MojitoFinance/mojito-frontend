@@ -36,7 +36,7 @@ const Home = ({ t }) => {
                         <p>MOJITO.finance</p>
                         <p>Future finance leader,The future of trading.</p>
                         <p>
-                            <Link href="/#/home">
+                            <Link href="http://123.56.72.197:3000/#/home">
                                 <button className={styles.lauch}>Launch App</button>
                             </Link>
                             <button className={styles.docs}>Mojito Docs</button>
