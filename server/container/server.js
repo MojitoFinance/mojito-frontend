@@ -5,7 +5,7 @@ import CryptoJS from "crypto-js/crypto-js"
 const User = db.User
 const ACCESS_KEY = "77cb41203927f6bb8e8e82ee4488af275699d7a5f835b527d79808ab3bbb256e"
 const SECRET_KEY = "8483df1d6e7832d95dd7d9214acb86cfbcb30a73ea644658f9ab1dc45be749cc"
-const BASE_URL = "https://api.bkex.cc/v2"
+const BASE_URL = "https://api.mojito.cc/v2"
 
 export async function test(req, res) {
     console.log(req, res)

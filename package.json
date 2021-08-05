@@ -1,5 +1,5 @@
 {
-  "name": "bkex",
+  "name": "mojito",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start -p 8000",
     "pm2": "pm2 start ./processes.json",
-    "server": "pm2 kill && pm2 start ./processes_dev.json && pm2 logs bkex",
-    "prod": "npm run build && pm2 kill && pm2 start ./processes_prod.json && pm2 logs bkex",
+    "server": "pm2 kill && pm2 start ./processes_dev.json && pm2 logs mojito",
+    "prod": "npm run build && pm2 kill && pm2 start ./processes_prod.json && pm2 logs mojito",
     "auto": "pm2 start ./schedule/index.js"
   },
   "dependencies": {

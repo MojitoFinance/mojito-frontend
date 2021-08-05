@@ -18,14 +18,14 @@ const HeaderFooter = (props) => {
               <meta name="renderer" content="webkit" />
               <meta name="author" content="teamoe" />
               <meta name="generator" content="teamoe" />
-              <meta name="copyright" content="bkex" />
+              <meta name="copyright" content="mojito" />
               <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
               <meta httpEquiv="Cache-Control" content="no-transform" />
               <meta httpEquiv="Cache-Control" content="no-siteapp" />
               <link rel="shortcut icon" href="/favicon.ico" />
               <link rel="bookmark" href="/favicon.ico" />
-              <meta name="description" content="bkex" />
-              <meta name="keywords" content="bkex" />
+              <meta name="description" content="mojito" />
+              <meta name="keywords" content="mojito" />
               <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
               <link rel="stylesheet" href="/ReactToastify.css" />
               <script

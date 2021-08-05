@@ -12,7 +12,7 @@ import Web3 from 'web3';
 import { getAccountBalance, getSymbols } from "../api/api"
  
 const Home = ({ t }) => {
-    const [activeIndex, setActiveIndex] = useState(0)
+    const [faqActiveIndex, setFaqActiveIndex] = useState(1)
 
     useEffect(async () => {
         const timer = setInterval(async () => {
@@ -36,7 +36,7 @@ const Home = ({ t }) => {
                         <p>MOJITO.finance</p>
                         <p>Future finance leader,The future of trading.</p>
                         <p>
-                            <Link href="/#/home">
+                            <Link href="http://123.56.72.197:3000/#/home">
                                 <button className={styles.lauch}>Launch App</button>
                             </Link>
                             <button className={styles.docs}>Mojito Docs</button>
@@ -101,9 +101,9 @@ const Home = ({ t }) => {
                     <h1>Learn more about MojitoSwap</h1>
                     <dl>
                         <dt className={styles.learn1}>
-                            <div className={styles.box_item}>
+                            {/* <div className={styles.box_item}>
                                 <img src="/img/learn_1.svg" />
-                            </div>
+                            </div> */}
                         </dt>
                         <dt className={styles.learn2}></dt>
                         <dt className={styles.learn3}></dt>
@@ -111,17 +111,15 @@ const Home = ({ t }) => {
                 </div>
                 <div className={cx(styles.advantage, styles.bg_white)}>
                     <h1>Frequently asked questions</h1>
-                    < div className = {
-                        cx(styles.faq, styles.active )
-                    } >
+                    < div onClick={()=>setFaqActiveIndex(1)} className={cx(styles.faq,{active: faqActiveIndex == 1 })}>
                         <span>1.What is Mojito Finance?</span>
                         <span po mn className={styles.content}>这里需要展开，告诉开发展开后的效果是什么样的。</span>
                     </div>
-                    <div className={cx(styles.faq,{active: activeIndex == 2 })}>
+                    <div onClick={()=>setFaqActiveIndex(2)} className={cx(styles.faq,{active: faqActiveIndex == 2 })}>
                         <span>1.What is Mojito Finance?</span>
                         <span className={styles.content}>这里需要展开，告诉开发展开后的效果是什么样的。</span>
                     </div>
-                    <div className={cx(styles.faq,{active: activeIndex == 3 })}>
+                    <div onClick={()=>setFaqActiveIndex(3)} className={cx(styles.faq,{active: faqActiveIndex == 3 })}>
                         <span>1.What is Mojito Finance?</span>
                         <span className={styles.content}>这里需要展开，告诉开发展开后的效果是什么样的。</span>
                     </div>
