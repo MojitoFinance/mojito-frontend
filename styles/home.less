@@ -409,6 +409,7 @@
           color: #5DDA98;
           font-weight: 600;
           font-family: alibaba-puhuiti, sans-serif;
+          white-space: pre-wrap;
         }
 
         h3 {
@@ -532,22 +533,32 @@
         margin: 10px 20px;
 
         &.learn1 {
-          background-image: url(../public/img/more_1.png);
+          background-image: url(../public/img/more_1.svg);
           // box-shadow: 5px 5px 0px #d5ede2;
           // background: #d6f6e5;
           // height: 125px;
           // width: 340px;
           // border-radius: 10px;
-        }&:hover{
-            // box-shadow: 1px 1px 30px #cdcdcd;
+          &:hover{
+            background-image: url(../public/img/more_1_hover.svg);
+              // box-shadow: 1px 1px 30px #cdcdcd;
+          }
         }
 
         &.learn2 {
           background-image: url(../public/img/more_2.svg);
+          &:hover{
+            background-image: url(../public/img/more_2_hover.svg);
+              // box-shadow: 1px 1px 30px #cdcdcd;
+          }
         }
 
         &.learn3 {
           background-image: url(../public/img/more_3.svg);
+          &:hover{
+            background-image: url(../public/img/more_3_hover.svg);
+              // box-shadow: 1px 1px 30px #cdcdcd;
+          }
         }
       }
     }
