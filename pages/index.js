@@ -7,6 +7,7 @@ import HeaderFooter from "../layout/HeaderFooter";
 import classNames from "classnames/bind";
 import styles from "../styles/home.less";
 import CountUp from 'react-countup';
+import ReactTypingEffect from "react-typing-effect"
 const cx = classNames.bind(styles);
 import Web3 from 'web3';
 import { getAccountBalance, getSymbols } from "../api/api"
@@ -21,7 +22,6 @@ const Home = ({ t }) => {
             clearInterval(timer)
         }
     }, [])
-    
 
     return (
         <HeaderFooter activeIndex={1}>
@@ -34,13 +34,13 @@ const Home = ({ t }) => {
                         <div className={styles.cow}></div>
                         <h1></h1>
                         <p>MOJITO.finance</p>
-                        <p>Future finance leader,The future of trading.</p>
+                        <p>Future finance leader,<ReactTypingEffect typingDelay={300} eraseSpeed={0} text={["The future of trading."]} /></p>
                         <p>
                             <Link href="http://123.56.72.197:3000/#/home">
                                 <button className={styles.lauch}>Launch App</button>
                             </Link>
                             <button className={styles.docs}>Mojito Docs</button>
-                            <Link href="/" >FAQs</Link>
+                            <Link href="#faq" >FAQs</Link>
                         </p>
                     </div>
                 </div>
@@ -49,19 +49,19 @@ const Home = ({ t }) => {
                     <i className={styles.decoration2}></i>
                     <ul>
                         <li>
-                            <CountUp start={27621} end={39824} separator="," decimal="."  decimals="1" prefix="$" suffix="+"/>
+                            <CountUp start={27621} end={39824} separator="," duration="5" decimal="."  decimals="1" prefix="$" suffix="+"/>
                             <h1>Total Value Locked</h1>
                         </li>
                         <li>
-                        <CountUp start={27621} end={39824} separator="," decimal="."  decimals="1" prefix="$" suffix="+"/>
+                        <CountUp start={27621} end={39824} separator="," duration="5" decimal="."  decimals="1" prefix="$" suffix="+"/>
                             <h1>Total MJT Supply</h1>
                         </li>
                         <li>
-                        <CountUp start={27621} end={39824} separator="," decimal="."  decimals="1" prefix="$" suffix="+"/>
+                        <CountUp start={27621} end={39824} separator="," duration="5" decimal="."  decimals="1" prefix="$" suffix="+"/>
                             <h1>Liquidity Providers</h1>
                         </li>
                         <li>
-                        <CountUp start={27621} end={39824} separator="," decimal="."  decimals="1" prefix="$" suffix="+"/>
+                        <CountUp start={27621} end={39824} separator="," duration="5" decimal="."  decimals="1" prefix="$" suffix="+"/>
                             <h1>All Time Trades</h1>
                         </li>
                     </ul>
@@ -73,7 +73,7 @@ const Home = ({ t }) => {
                     <ul>
                         <li className={styles.community}>
                             <h1><img src="/img/advantage1hover.gif" /></h1>
-                            <h2>Community Owned</h2>
+                            <h2>Community </h2><h2>Owned</h2>
                             <h3></h3>
                             <p>Mojito is owned by the community，Community Autonomous Exchange</p>
                         </li>
@@ -109,19 +109,19 @@ const Home = ({ t }) => {
                         <dt className={styles.learn3}></dt>
                     </dl>
                 </div>
-                <div className={cx(styles.advantage, styles.bg_white)}>
+                <div className={cx(styles.advantage, styles.bg_white)} id="faq">
                     <h1>Frequently asked questions</h1>
                     < div onClick={()=>setFaqActiveIndex(1)} className={cx(styles.faq,{active: faqActiveIndex == 1 })}>
                         <span>1.What is Mojito Finance?</span>
-                        <span po mn className={styles.content}>这里需要展开，告诉开发展开后的效果是什么样的。</span>
+                        <span po mn className={styles.content}>MojitoSwap is a decentralized exchange that allows you to trade cryptocurrencies and tokens without a centralized intermediary, keeping custody of your tokens all the while.</span>
                     </div>
                     <div onClick={()=>setFaqActiveIndex(2)} className={cx(styles.faq,{active: faqActiveIndex == 2 })}>
                         <span>1.What is Mojito Finance?</span>
-                        <span className={styles.content}>这里需要展开，告诉开发展开后的效果是什么样的。</span>
+                        <span className={styles.content}>MojitoSwap is a decentralized exchange that allows you to trade cryptocurrencies and tokens without a centralized intermediary, keeping custody of your tokens all the while.</span>
                     </div>
                     <div onClick={()=>setFaqActiveIndex(3)} className={cx(styles.faq,{active: faqActiveIndex == 3 })}>
                         <span>1.What is Mojito Finance?</span>
-                        <span className={styles.content}>这里需要展开，告诉开发展开后的效果是什么样的。</span>
+                        <span className={styles.content}>MojitoSwap is a decentralized exchange that allows you to trade cryptocurrencies and tokens without a centralized intermediary, keeping custody of your tokens all the while.</span>
                     </div>
                 </div>
             </div>

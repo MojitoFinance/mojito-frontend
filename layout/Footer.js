@@ -4,7 +4,7 @@ import styles from '../styles/layout.less'
 const Footer = ({ t }) => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.leftfont}>Join our community</div>
+            <div className={styles.leftfont}>© 2021  Mojito All rights reserved.</div>
             <ul>
                 <Link href="/">
                     <li>
