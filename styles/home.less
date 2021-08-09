@@ -228,9 +228,11 @@
             width: 150px;
           }
           &.docs:hover{
-            border: 2px solid #2b4789;
-            color: #fff;
-            background: #2b4789;
+            // border: 2px solid #2b4789;
+            // color: #fff;
+            // background: #2b4789;
+            background: #043a6c29;
+            border: 2px solid #043a6c;
           }
         }
 
@@ -252,6 +254,8 @@
   .data {
     position: relative;
     padding: 20px 0;
+    height: 135px;
+    box-sizing: content-box;
 
     .decoration1 {
       background: url(../public/img/decoration1.png) no-repeat center;
@@ -284,14 +288,15 @@
         text-align: center;
         position: relative;
 
-        &::after {
+        
+        &:not(:last-child)::after {
           border-right: 1px solid #979797;
           content: "0";
           color: transparent;
           height: 30px;
           position: absolute;
           right: 0;
-          top: 50px;
+          top: 25px;
         }
 
         h1 {
@@ -400,7 +405,7 @@
         &:hover {
           background-color: #D6F6E5 !important;
           border: 1px solid #7CA6B3;
-          box-shadow: 1px 2px 10px #5DDA98;
+          // box-shadow: 1px 2px 10px #5DDA98;
         }
         h1 {
           background: url(../public/img/advantage1.svg) no-repeat left center;
