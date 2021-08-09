@@ -7,7 +7,7 @@ import HeaderFooter from "../layout/HeaderFooter";
 import classNames from "classnames/bind";
 import styles from "../styles/home.less";
 import CountUp from 'react-countup';
-import ReactTypingEffect from "react-typing-effect"
+// import ReactTypingEffect from "react-typing-effect"
 const cx = classNames.bind(styles);
 import Web3 from 'web3';
 import { getAccountBalance, getSymbols } from "../api/api"
@@ -34,7 +34,7 @@ const Home = ({ t }) => {
                         <div className={styles.cow}></div>
                         <h1></h1>
                         <p>MOJITO.finance</p>
-                        <p>Future finance leader,<ReactTypingEffect typingDelay={300} eraseSpeed={0} text={["The future of trading."]} /></p>
+                        {/* <p>Future finance leader,<ReactTypingEffect typingDelay={300} eraseSpeed={0} text={["The future of trading."]} /></p> */}
                         <p>
                             <Link href="http://123.56.72.197:3000/#/home">
                                 <button className={styles.lauch}>Launch App</button>
