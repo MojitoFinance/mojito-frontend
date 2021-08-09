@@ -7,13 +7,16 @@ import HeaderFooter from "../layout/HeaderFooter";
 import classNames from "classnames/bind";
 import styles from "../styles/home.less";
 import CountUp from 'react-countup';
-// import ReactTypingEffect from "react-typing-effect"
+import ReactTypingEffect from "react-typing-effect"
 const cx = classNames.bind(styles);
 import Web3 from 'web3';
 import { getAccountBalance, getSymbols } from "../api/api"
- 
+
 const Home = ({ t }) => {
-    const [faqActiveIndex, setFaqActiveIndex] = useState(1)
+    const [faq1State, setFaq1State] = useState(false)
+    const [faq2State, setFaq2State] = useState(false)
+    const [faq3State, setFaq3State] = useState(false)
+
 
     useEffect(async () => {
         const timer = setInterval(async () => {
@@ -22,6 +25,13 @@ const Home = ({ t }) => {
             clearInterval(timer)
         }
     }, [])
+
+    const toggleFAQ = (index) => {
+        let state = faqActiveIndex
+        state[index] = faqActiveIndex[index] == 0 ? 1 : 0
+        console.log(state, faqActiveIndex)
+        setFaqActiveIndex(state)
+    }
 
     return (
         <HeaderFooter activeIndex={1}>
@@ -34,7 +44,7 @@ const Home = ({ t }) => {
                         <div className={styles.cow}></div>
                         <h1></h1>
                         <p>MOJITO.finance</p>
-                        {/* <p>Future finance leader,<ReactTypingEffect typingDelay={300} eraseSpeed={0} text={["The future of trading."]} /></p> */}
+                        <p>Future finance leader,<ReactTypingEffect typingDelay={300} eraseSpeed={0} text={["The future of trading."]} /></p>
                         <p>
                             <Link href="http://123.56.72.197:3000/#/home">
                                 <button className={styles.lauch}>Launch App</button>
@@ -111,15 +121,36 @@ const Home = ({ t }) => {
                 </div>
                 <div className={cx(styles.advantage, styles.bg_white)} id="faq">
                     <h1>Frequently asked questions</h1>
-                    < div onClick={()=>setFaqActiveIndex(1)} className={cx(styles.faq,{active: faqActiveIndex == 1 })}>
+                    < div onClick = {
+                        () => setFaq1State(!faq1State)
+                    }
+                    className = {
+                        cx(styles.faq, {
+                            active: faq1State
+                        })
+                    } >
                         <span>1.What is Mojito Finance?</span>
                         <span po mn className={styles.content}>MojitoSwap is a decentralized exchange that allows you to trade cryptocurrencies and tokens without a centralized intermediary, keeping custody of your tokens all the while.</span>
                     </div>
-                    <div onClick={()=>setFaqActiveIndex(2)} className={cx(styles.faq,{active: faqActiveIndex == 2 })}>
+                    < div onClick = {
+                        () => setFaq2State(!faq2State)
+                    }
+                    className = {
+                        cx(styles.faq, {
+                            active: faq2State
+                        })
+                    } >
                         <span>1.What is Mojito Finance?</span>
                         <span className={styles.content}>MojitoSwap is a decentralized exchange that allows you to trade cryptocurrencies and tokens without a centralized intermediary, keeping custody of your tokens all the while.</span>
                     </div>
-                    <div onClick={()=>setFaqActiveIndex(3)} className={cx(styles.faq,{active: faqActiveIndex == 3 })}>
+                    < div onClick = {
+                        () => setFaq3State(!faq3State)
+                    }
+                    className = {
+                        cx(styles.faq, {
+                            active: faq3State
+                        })
+                    } >
                         <span>1.What is Mojito Finance?</span>
                         <span className={styles.content}>MojitoSwap is a decentralized exchange that allows you to trade cryptocurrencies and tokens without a centralized intermediary, keeping custody of your tokens all the while.</span>
                     </div>
