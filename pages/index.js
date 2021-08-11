@@ -59,19 +59,19 @@ const Home = ({ t }) => {
                     <i className={styles.decoration2}></i>
                     <ul>
                         <li>
-                            <CountUp start={27621} end={39824} separator="," duration="5" decimal="."  decimals="1" prefix="$" suffix="+"/>
+                            <CountUp start={27621} end={39824} separator="," duration="5" decimal="." decimals="1" prefix="$" suffix="+" />
                             <h1>Total Value Locked</h1>
                         </li>
                         <li>
-                        <CountUp start={27621} end={39824} separator="," duration="5" decimal="."  decimals="1" prefix="$" suffix="+"/>
+                            <CountUp start={27621} end={39824} separator="," duration="5" decimal="." decimals="1" prefix="$" suffix="+" />
                             <h1>Total MJT Supply</h1>
                         </li>
                         <li>
-                        <CountUp start={27621} end={39824} separator="," duration="5" decimal="."  decimals="1" prefix="$" suffix="+"/>
+                            <CountUp start={27621} end={39824} separator="," duration="5" decimal="." decimals="1" prefix="$" suffix="+" />
                             <h1>Liquidity Providers</h1>
                         </li>
                         <li>
-                        <CountUp start={27621} end={39824} separator="," duration="5" decimal="."  decimals="1" prefix="$" suffix="+"/>
+                            <CountUp start={27621} end={39824} separator="," duration="5" decimal="." decimals="1" prefix="$" suffix="+" />
                             <h1>All Time Trades</h1>
                         </li>
                     </ul>
@@ -101,56 +101,74 @@ const Home = ({ t }) => {
                             <h3></h3>
                             <p>We will not stick to existing products, and will carry out more innovations in the defi field</p>
                         </li>
-                        
+
                     </ul>
                 </div>
-                <div className={cx(styles.advantage,styles.bg_white)}>
+                <div className={cx(styles.advantage, styles.bg_white)}>
                     <i className={styles.decoration3}></i>
                     <i className={styles.decoration4}></i>
                     <i className={styles.decoration5}></i>
                     <h1>Learn more about MojitoSwap</h1>
                     <dl>
-                        <dt className={styles.learn1}>
-                            {/* <div className={styles.box_item}>
+                        {/* <dt className={styles.learn1}>
+                                <div className={styles.box_item}>
                                 <img src="/img/learn_1.svg" />
-                            </div> */}
+                            </div> 
+                        </dt> */}
+                        <dt>
+                             <div className={styles.box_item}>
+                                <img src="/img/learn_1.svg" />
+                                <p>Total MJT Supply</p>
+                            </div>
                         </dt>
-                        <dt className={styles.learn2}></dt>
-                        <dt className={styles.learn3}></dt>
+                        <dt>
+                             <div className={styles.box_item}>
+                                <img src="/img/learn_2.svg" />
+                                <p>How to Swap</p>
+                            </div>
+                        </dt>                        
+                        <dt>
+                             <div className={styles.box_item}>
+                                <img src="/img/learn_3.svg" />
+                                <pre><p className={styles.text_3}>How to <br/> Liquidity mining</p></pre>
+                            </div>
+                        </dt>
+                        {/* <dt className={styles.learn2}></dt>
+                        <dt className={styles.learn3}></dt> */}
                     </dl>
                 </div>
                 <div className={cx(styles.advantage, styles.bg_white)} id="faq">
                     <h1>Frequently asked questions</h1>
-                    < div onClick = {
+                    < div onClick={
                         () => setFaq1State(!faq1State)
                     }
-                    className = {
-                        cx(styles.faq, {
-                            active: faq1State
-                        })
-                    } >
+                        className={
+                            cx(styles.faq, {
+                                active: faq1State
+                            })
+                        } >
                         <span>1.What is Mojito Finance?</span>
                         <span po mn className={styles.content}>MojitoSwap is a decentralized exchange that allows you to trade cryptocurrencies and tokens without a centralized intermediary, keeping custody of your tokens all the while.</span>
                     </div>
-                    < div onClick = {
+                    < div onClick={
                         () => setFaq2State(!faq2State)
                     }
-                    className = {
-                        cx(styles.faq, {
-                            active: faq2State
-                        })
-                    } >
+                        className={
+                            cx(styles.faq, {
+                                active: faq2State
+                            })
+                        } >
                         <span>1.What is Mojito Finance?</span>
                         <span className={styles.content}>MojitoSwap is a decentralized exchange that allows you to trade cryptocurrencies and tokens without a centralized intermediary, keeping custody of your tokens all the while.</span>
                     </div>
-                    < div onClick = {
+                    < div onClick={
                         () => setFaq3State(!faq3State)
                     }
-                    className = {
-                        cx(styles.faq, {
-                            active: faq3State
-                        })
-                    } >
+                        className={
+                            cx(styles.faq, {
+                                active: faq3State
+                            })
+                        } >
                         <span>1.What is Mojito Finance?</span>
                         <span className={styles.content}>MojitoSwap is a decentralized exchange that allows you to trade cryptocurrencies and tokens without a centralized intermediary, keeping custody of your tokens all the while.</span>
                     </div>
@@ -161,7 +179,7 @@ const Home = ({ t }) => {
 }
 
 Home.getInitialProps = async () => ({
-  namespacesRequired: ["common", "header", "home"],
+    namespacesRequired: ["common", "header", "home"],
 });
 
 
