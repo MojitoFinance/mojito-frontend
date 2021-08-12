@@ -40,8 +40,9 @@ const Home = ({ t }) => {
             </Head>
             <div className={styles.wrapper}>
                 <div className={styles.banner}>
+                    <div className={styles.cow}></div>
+
                     <div className={styles.text}>
-                        <div className={styles.cow}></div>
                         <h1></h1>
                         <p>MOJITO.finance</p>
                         <p>Future finance leader,<ReactTypingEffect typingDelay={300} eraseSpeed={0} text={["The future of trading."]} /></p>
@@ -128,7 +129,7 @@ const Home = ({ t }) => {
                             </div>
                         </dt>                        
                         <dt>
-                             <div className={styles.box_item}>
+                            <div className={styles.box_item}>
                                 <img src="/img/learn_3.svg" />
                                 <pre><p className={styles.text_3}>How to <br/> Liquidity mining</p></pre>
                             </div>

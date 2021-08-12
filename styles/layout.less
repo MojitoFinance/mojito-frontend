@@ -2,19 +2,18 @@ body {
   font-weight: 400;
   font-size: 12px;
   font-family: alibaba-puhuiti, sans-serif;
-  overflow-x:hidden;
+  overflow-x: hidden;
   color: #596a7a;
 }
 
-.wrapper{
-
-}
+.wrapper {}
 
 .header {
   padding: 0px 24px;
   box-sizing: border-box;
   font-size: 16px;
   background: #fff;
+
   // border-bottom: 5px solid #06386C;
   .inner {
     min-width: 1200px;
@@ -25,7 +24,8 @@ body {
     box-sizing: border-box;
     padding: 0 30px;
     line-height: 75px;
-    .logo{
+
+    .logo {
       background: url(../public/img/logo.svg) no-repeat center;
       width: 130px;
       height: 40px;
@@ -37,8 +37,7 @@ body {
   }
 }
 
-.container {
-}
+.container {}
 
 
 .footer {
@@ -47,66 +46,78 @@ body {
   justify-content: center;
   height: 72px;
   width: 101%;
-  margin:0 auto;
+  margin: 0 auto;
   background: #5DDA98;
-  ul{
+
+  ul {
     align-items: center;
     display: flex;
     padding-right: 100px;
     padding-top: 8px;
-    li{
+
+    li {
       color: rgb(127, 124, 141);
       padding: 0 13px;
       text-decoration: none;
       cursor: pointer;
-      i{
+
+      i {
         display: inline-block;
         width: 26px;
         height: 26px;
         color: #fff;
-        &.medium{
+
+        &.medium {
           background: url(../public/img/medium.svg) no-repeat center;
           background-size: 90% auto;
-          &:hover{
+
+          &:hover {
             background: url(../public/img/medium_hover.svg) no-repeat center;
           }
         }
+
         // &.medium:hover{
         //   // background: url(../public/img/icon_medium_hover.svg) no-repeat center;
         //   background: url(../public/img/icon_twitter_hover.svg) no-repeat center;
         //   background-size: 90% auto;
         // }
-        &.twitter{
+        &.twitter {
           background: url(../public/img/twitter.svg) no-repeat center;
           background-size: 90% auto;
-          &:hover{
+
+          &:hover {
             background: url(../public/img/twitter_hover.svg) no-repeat center;
           }
         }
+
         // &.twitter:hover{
         //   // background: url(../public/img/icon_twitter_hover.svg) no-repeat center;
         //    background: url(../public/img/icon_telegram_hover.svg) no-repeat center;
         //   background-size: 90% auto;
         // }
-        &.telegram{
+        &.telegram {
           background: url(../public/img/telegram.svg) no-repeat center;
           background-size: 90% auto;
-          &:hover{
+
+          &:hover {
             background: url(../public/img/telegram_hover.svg) no-repeat center;
           }
         }
+
         // &.telegram:hover{
         //   // background: url(../public/img/icon_telegram_hover.svg) no-repeat center;
         //   background: url(../public/img/icon_medium_hover.svg) no-repeat center;
         //   background-size: 90% auto;
         // }
-        &.github{
+        &.github {
           background: url(../public/img/github.svg) no-repeat center;
           background-size: 90% auto;
-          &:hover{
+
+          &:hover {
             background: url(../public/img/github_hover.svg) no-repeat center;
           }
         }
+
         // &.github:hover{
         //   background: url(../public/img/icon_github_hover.svg) no-repeat center;
         //   background-size: 90% auto;
@@ -114,15 +125,40 @@ body {
       }
     }
   }
-  .leftfont{
+
+  .leftfont {
     left: 54px;
     font-size: 16px;
     // color: #033A6E;
-    color:white;
+    color: white;
     width: 100%;
     padding-left: 90px;
-}
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .header {
+    width: 100%;
+    .inner{
+      min-width: 0;
+      padding: 0;
+      height: 50px;
+      line-height: 50px;
+      .logo {
+        height: 20px;
+        width: 55px;
+        background-size: 100% auto ;
+      }
+    }
+  }
+  .footer{
+      .leftfont {
+        left: 54px;
+        font-size: 12px;
+        // color: #033A6E;
+        color: white;
+        width: 100%;
+        padding-left: 100px;
+      }
+    }
 }
