@@ -8,13 +8,14 @@
     overflow: hidden;
 
     .cow {
-      background: url(../public/img/cow.png) no-repeat center;
+      background: url(../public/img/cow.png) no-repeat center; 
       width: 650px;
       height: 450px;
       position: absolute;
       background-size: 465px;
       top: 13px;
-      left: 85%;
+      left: 50%;
+      margin-left: 100px;
       transition: width 10s linear 0s;
       transform: rotate(4deg);
       animation: myfirst 3s both infinite;
@@ -557,6 +558,7 @@
             margin-right: 20px;
             cursor: pointer;
             margin-top: 15px;
+            display: block;
 
             &.lauch {
               color: #fff;
@@ -570,8 +572,9 @@
               color: #06366A;
               font-size: 14px;
               font-weight: 500;
-              padding: 12px;
+              padding: 10px 20px;
               width: 150px;
+              margin-bottom: 10px;
             }
 
           }
