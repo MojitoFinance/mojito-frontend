@@ -8,7 +8,7 @@ frontend:
         - yarn install
     build:
       commands:
-        - yarn run prod
+        - yarn run build
   artifacts:
     baseDirectory: .next
     files:
