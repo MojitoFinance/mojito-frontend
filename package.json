@@ -8,14 +8,14 @@
     "start": "next start -p 8000",
     "pm2": "pm2 start ./processes.json",
     "server": "pm2 kill && pm2 start ./processes_dev.json && pm2 logs mojito",
-    "prod": "npm run build && pm2 kill && pm2 start ./processes_prod.json && pm2 logs mojito",
+    "prod": "npm run build && pm2 kill && pm2 start ./processes_prod.json",
     "auto": "pm2 start ./schedule/index.js"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "global": "^4.4.0",
     "json-circular-stringify": "1.0.1",
-    "next": "11.0.1",
+    "next": "10.0.1",
     "numbro": "^2.3.2",
     "pm2": "^5.1.0",
     "react": "17.0.1",
