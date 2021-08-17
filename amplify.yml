@@ -1,4 +1,6 @@
 version: 1
+env:
+  node: 12
 frontend:
   phases:
     preBuild:
