@@ -1,0 +1,48 @@
+.wrapper {
+    padding: 20px;
+}
+
+.wrapper table {
+    border       : 1px solid #e6ecf2;
+    border-radius: 5px;
+}
+
+.wrapper table tr th {
+    border-top      : 1px solid #e6ecf2;
+    background-color: #f2f6fa;
+    padding         : 5px 20px;
+    white-space     : nowrap;
+}
+
+.wrapper table tr td {
+    border-bottom: 1px solid #e6ecf2;
+    padding      : 5px 20px;
+    white-space  : nowrap;
+}
+
+.wrapper .user p {
+    padding: 10px 0;
+}
+
+.wrapper .list p {
+    padding: 10px 0;
+}
+
+.wrapper .list input {
+    border       : 1px solid #cdd5dd;
+    padding      : 5px 10px;
+    border-radius: 5px;
+    overflow     : hidden;
+    font-size    : 14px;
+    color        : #596a7a;
+}
+
+.wrapper .list button {
+    background   : #3771cc;
+    border       : none;
+    border-radius: 3px;
+    cursor       : pointer;
+    color        : #fff;
+    font-size    : 12px;
+    padding      : 5px 15px;
+}

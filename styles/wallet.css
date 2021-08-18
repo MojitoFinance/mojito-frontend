@@ -1,0 +1,183 @@
+.walletMask {
+    background-color: rgba(0, 0, 0, 0.4);
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+    padding         : 10px;
+    display         : flex;
+    z-index         : 9999;
+    align-items     : center;
+    justify-content : center;
+    pointer-events  : auto;
+    line-height     : 1.5em;
+}
+
+.walletMask.hide {
+    display: none;
+}
+
+.walletMask .walletDialog {
+    width           : 90%;
+    max-width       : 370px;
+    position        : relative;
+    background-color: #ffffff;
+    border-radius   : 10px;
+    margin          : 8px;
+    opacity         : 1;
+    visibility      : visible;
+    pointer-events  : auto;
+    display         : grid;
+    min-width       : fit-content;
+    max-height      : 100%;
+    overflow        : auto;
+}
+
+.walletMask .walletDialog li {
+    width          : 100%;
+    padding        : 6px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    cursor         : pointer;
+    border         : 1px solid rgba(195, 195, 195, 0.14);
+    box-sizing     : border-box;
+    padding        : 5.922px;
+}
+
+.walletMask .walletDialog li:hover .walletWrapper {
+    background-color: rgba(195, 195, 195, 0.14);
+}
+
+.walletMask .walletDialog li .walletWrapper {
+    padding        : 18px 12px;
+    border-radius  : 10px;
+    box-sizing     : border-box;
+    width          : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+.walletMask .walletDialog li img {
+    width          : 33px;
+    height         : 33px;
+    display        : flex;
+    border-radius  : 50%;
+    overflow       : visible;
+    box-shadow     : none;
+    justify-content: center;
+    align-items    : center;
+}
+
+.walletMask .walletDialog li .walletTitle {
+    width      : 100%;
+    font-size  : 17.767px;
+    font-weight: 700;
+    margin-top : 0.5em;
+    color      : #0c0c0d;
+    text-align : center;
+}
+
+.walletMask .walletDialog li .walletTips {
+    color    : #2c3e50;
+    font-size: 12px;
+}
+
+.wallet {
+    float: right;
+}
+
+.wallet .account {
+    vertical-align: middle;
+    display       : inline-block;
+}
+
+.wallet .balance {
+    background    : #f16a0f;
+    color         : #fff;
+    border-radius : 4.166px;
+    padding       : 4.166px;
+    margin        : 0 7.403px;
+    vertical-align: middle;
+    display       : inline-block;
+}
+
+.button {
+    align-items    : center;
+    border         : 2px solid #033A6E;
+    background     : #043a6d;
+    background-size: auto 50%;
+    border-radius  : 4px;
+    box-sizing     : border-box;
+    color          : #fff;
+    cursor         : pointer;
+    display        : flex;
+    font-size      : 14px;
+    font-weight    : bold;
+    height         : 45px;
+    justify-content: center;
+    margin         : 0px;
+    margin-left    : 5px;
+    min-width      : 36px;
+    width          : 160px;
+    outline        : none;
+    padding-left   : 16px;
+    padding-right  : 16px;
+    white-space    : nowrap;
+    display        : inline-block;
+}
+
+.button:hover {
+    background: #2b4789;
+    border    : 1px solid #2b4789;
+}
+
+.getMTJ {
+    align-items    : center;
+    background     : none;
+    background-size: auto 50%;
+    border-radius  : 4px;
+    box-sizing     : border-box;
+    border         : 2px solid #033A6E;
+    color          : #033A6E;
+    cursor         : pointer;
+    display        : flex;
+    font-size      : 14px;
+    font-weight    : bold;
+    height         : 45px;
+    justify-content: center;
+    margin         : 0px;
+    margin-left    : 5px;
+    min-width      : 36px;
+    width          : 120px;
+    outline        : none;
+    padding-left   : 16px;
+    padding-right  : 16px;
+    white-space    : nowrap;
+    display        : inline-block;
+}
+
+.getMTJ:hover {
+    background: #043a6c29;
+    border    : 2px solid #043a6c;
+}
+
+@media screen and (max-width: 500px) {
+    .button {
+        width      : 125px;
+        height     : 30px;
+        font-size  : 10px;
+        font-weight: 500;
+    }
+
+    .getMTJ {
+        width      : 80px;
+        font-weight: 500;
+        height     : 30px;
+        font-size  : 10px;
+    }
+}

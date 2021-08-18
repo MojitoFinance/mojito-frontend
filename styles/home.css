@@ -1,0 +1,776 @@
+.wrapper .banner {
+  background     : #d5f7e6 url(../public/img/banner.jpg) no-repeat center;
+  background-size: auto 100%;
+  height         : 450px;
+  position       : relative;
+  z-index        : 999;
+  overflow       : hidden;
+}
+
+.wrapper .banner .cow {
+  background     : url(../public/img/cow_2.png) no-repeat center;
+  width          : 650px;
+  height         : 450px;
+  position       : absolute;
+  background-size: 465px;
+  top            : 13px;
+  left           : 40%;
+  margin-left    : 100px;
+  transition     : width 10s linear 0s;
+  transform      : rotate(4deg);
+  animation      : myfirst 3s both infinite;
+}
+
+.wrapper .banner .text {
+  position   : absolute;
+  left       : 46%;
+  width      : 600px;
+  margin-left: -500px;
+  color      : #033A6E;
+}
+
+.wrapper .banner .text h1 {
+  background     : url(../public/img/text_h1.svg) no-repeat left center;
+  background-size: auto 100%;
+  height         : 80px;
+  margin-bottom  : 40px;
+  margin-top     : 85px;
+}
+
+.wrapper .banner .text p {
+  font-size  : 24px;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: alibaba-puhuiti, sans-serif;
+  font-weight: 400;
+}
+
+.wrapper .banner .text p button {
+  font-size    : 18px;
+  font-weight  : lighter;
+  padding      : 10px 20px;
+  border       : 2px solid transparent;
+  border-radius: 3px;
+  margin-right : 20px;
+  cursor       : pointer;
+  margin-top   : 40px;
+}
+
+.wrapper .banner .text p button.lauch {
+  background : #033A6E;
+  color      : #fff;
+  font-weight: 500;
+  width      : 180px;
+}
+
+.wrapper .banner .text p button:hover {
+  border    : 2px solid #2b4789;
+  color     : #fff;
+  background: #2b4789;
+}
+
+.wrapper .banner .text p button.docs {
+  background : none;
+  border     : 2px solid #06366A;
+  color      : #06366A;
+  font-size  : 16px;
+  font-weight: 500;
+  padding    : 12px;
+  width      : 150px;
+}
+
+.wrapper .banner .text p button.docs:hover {
+  background: #043a6c29;
+  border    : 2px solid #043a6c;
+}
+
+.wrapper .banner .text p a {
+  color    : #06366A;
+  font-size: 18px;
+  padding  : 0 10px;
+}
+
+.wrapper .faq {
+  color: #033A6E;
+}
+
+.wrapper .data {
+  position  : relative;
+  padding   : 20px 0;
+  height    : 135px;
+  box-sizing: content-box;
+}
+
+.wrapper .data .decoration1 {
+  background     : url(../public/img/decoration1.png) no-repeat center;
+  position       : absolute;
+  background-size: 100% auto;
+  width          : 120px;
+  height         : 140px;
+  top            : 100px;
+  left           : -55px;
+}
+
+.wrapper .data .decoration2 {
+  background     : url(../public/img/decoration2.png) no-repeat center;
+  position       : absolute;
+  background-size: 100% auto;
+  width          : 120px;
+  height         : 140px;
+  top            : 100px;
+  right          : -30px;
+}
+
+.wrapper .data ul {
+  width      : 1300px;
+  margin     : 30px auto;
+  white-space: nowrap;
+}
+
+.wrapper .data ul li {
+  display   : inline-block;
+  width     : 25%;
+  text-align: center;
+  position  : relative;
+}
+
+.wrapper .data ul li:not(:last-child)::after {
+  border-right: 1px solid #979797;
+  content     : "0";
+  color       : transparent;
+  height      : 30px;
+  position    : absolute;
+  right       : 0;
+  top         : 25px;
+}
+
+.wrapper .data ul li h1 {
+  font-size  : 16px;
+  font-family: alibaba-puhuiti, sans-serif;
+  font-weight: 600;
+}
+
+.wrapper .data ul li span {
+  font-size  : 34px;
+  color      : #5DDA98;
+  padding    : 20px 0;
+  font-weight: 700;
+  font-family: alibaba-puhuiti, sans-serif;
+}
+
+.wrapper .advantage {
+  background: #f9f9f9;
+  padding   : 80px 0;
+  position  : relative;
+}
+
+.wrapper .advantage.bg_white {
+  background: #fff;
+}
+
+.wrapper .advantage .decoration1 {
+  background     : url(../public/img/decoration1.png) no-repeat center;
+  position       : absolute;
+  background-size: 100% auto;
+  width          : 120px;
+  height         : 140px;
+  top            : 570px;
+  left           : 50%;
+  margin-left    : 580px;
+}
+
+.wrapper .advantage .decoration2 {
+  background     : url(../public/img/decoration2.png) no-repeat center;
+  position       : absolute;
+  background-size: 100% auto;
+  width          : 140px;
+  height         : 140px;
+  top            : 360px;
+  left           : -60px;
+}
+
+.wrapper .advantage .decoration3 {
+  background     : url(../public/img/decoration2.png) no-repeat center;
+  position       : absolute;
+  background-size: 100% auto;
+  width          : 140px;
+  height         : 140px;
+  top            : 0;
+  left           : 100px;
+}
+
+.wrapper .advantage .decoration4 {
+  background     : url(../public/img/decoration1.png) no-repeat center;
+  position       : absolute;
+  background-size: 100% auto;
+  width          : 100px;
+  height         : 100px;
+  top            : 360px;
+  left           : 200px;
+}
+
+.wrapper .advantage .decoration5 {
+  background     : url(../public/img/decoration2.png) no-repeat center;
+  position       : absolute;
+  background-size: 100% auto;
+  width          : 140px;
+  height         : 140px;
+  top            : 230px;
+  right          : -50px;
+}
+
+.wrapper .advantage h1 {
+  font-size    : 36px;
+  text-align   : center;
+  color        : #5DDA98;
+  margin-bottom: 40px;
+  font-family  : alibaba-puhuiti, sans-serif;
+  font-weight  : 700;
+}
+
+.wrapper .advantage ul {
+  width      : 1200px;
+  margin     : 0 auto;
+  white-space: nowrap;
+}
+
+.wrapper .advantage ul li {
+  width         : 385px;
+  display       : inline-block;
+  border-radius : 5px;
+  border        : 1px solid #D3DCC8;
+  box-sizing    : border-box;
+  padding       : 40px;
+  margin        : 0 8px;
+  white-space   : normal;
+  vertical-align: top;
+  height        : 480px;
+}
+
+.wrapper .advantage ul li:hover {
+  background-color: #D6F6E5 !important;
+  border          : 1px solid #7CA6B3;
+}
+
+.wrapper .advantage ul li h1 {
+  background: url(../public/img/advantage1.svg) no-repeat left center;
+  height    : 115px;
+}
+
+.wrapper .advantage ul li h2 {
+  font-size  : 28px;
+  color      : #5DDA98;
+  font-weight: 600;
+  font-family: alibaba-puhuiti, sans-serif;
+}
+
+.wrapper .advantage ul li h3 {
+  background: #54FFA1;
+  height    : 3px;
+  width     : 60px;
+  margin-top: 40px;
+}
+
+.wrapper .advantage ul li p {
+  font-size    : 20px;
+  color        : #033A6E;
+  margin-top   : 25px;
+  margin-bottom: 40px;
+  font-weight  : normal;
+  line-height  : 1.8em;
+  font-family  : alibaba-puhuiti, sans-serif;
+  font-weight  : 400;
+}
+
+.wrapper .advantage ul li.community {
+  background: #f7f9f4 url(../public/img/advantage1_bg.svg) no-repeat right top;
+}
+
+.wrapper .advantage ul li.community h1 {
+  background     : url(../public/img/advantage1.svg) no-repeat left center;
+  width          : 90px;
+  background-size: 60px;
+  margin-bottom  : 10px;
+}
+
+.wrapper .advantage ul li.community h1 img {
+  display: none;
+}
+
+.wrapper .advantage ul li.community:hover h1 {
+  background     : none;
+  height         : 115px;
+  background-size: 60px;
+  width          : 90px;
+}
+
+.wrapper .advantage ul li.community:hover h1 img {
+  display     : block;
+  width       : 60px;
+  padding     : 15px;
+  padding-left: 0px;
+}
+
+.wrapper .advantage ul li.swap {
+  background: #f7f9f4 url(../public/img/advantage2_bg.svg) no-repeat right top;
+}
+
+.wrapper .advantage ul li.swap h1 {
+  background     : url(../public/img/advantage2.svg) no-repeat left center;
+  width          : 90px;
+  background-size: 60px;
+  margin-bottom  : 10px;
+}
+
+.wrapper .advantage ul li.swap h1 img {
+  display: none;
+}
+
+.wrapper .advantage ul li.swap:hover h1 {
+  background     : none;
+  height         : 115px;
+  background-size: 60px;
+  width          : 90px;
+}
+
+.wrapper .advantage ul li.swap:hover h1 img {
+  display     : block;
+  width       : 75px;
+  padding     : 15px;
+  padding-left: 0px;
+  padding-top : 11px;
+}
+
+.wrapper .advantage ul li.defi {
+  background: #f7f9f4 url(../public/img/advantage3_bg.svg) no-repeat right top;
+}
+
+.wrapper .advantage ul li.defi h1 {
+  background     : url(../public/img/advantage3.svg) no-repeat left center;
+  width          : 90px;
+  background-size: 60px;
+  margin-bottom  : 10px;
+}
+
+.wrapper .advantage ul li.defi h1 img {
+  display: none;
+}
+
+.wrapper .advantage ul li.defi:hover h1 {
+  background     : none;
+  height         : 115px;
+  background-size: 60px;
+  width          : 90px;
+}
+
+.wrapper .advantage ul li.defi:hover h1 img {
+  display     : block;
+  width       : 60px;
+  padding     : 15px;
+  padding-left: 0px;
+  padding-top : 25px;
+}
+
+.wrapper .advantage dl {
+  white-space: nowrap;
+  text-align : center;
+}
+
+.wrapper .advantage dl dt {
+  background-size: 100% auto;
+  width          : 350px;
+  height         : 130px;
+  display        : inline-block;
+  margin         : 10px 20px;
+  cursor         : pointer;
+}
+
+.wrapper .advantage dl dt .box_item {
+  background   : #dcf5e6;
+  display      : flex;
+  padding      : 35px 45px;
+  box-sizing   : content-box;
+  border-radius: 10px;
+  box-shadow   : 5px 5px 0px #B3D5C3;
+}
+
+.wrapper .advantage dl dt .box_item p {
+  text-align     : center;
+  width          : 100%;
+  font-size      : 20px;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  color          : #023A6E;
+  font-weight    : 600;
+  font-family    : alibaba-puhuiti, sans-serif;
+  white-space    : pre-line;
+}
+
+.wrapper .advantage dl dt .box_item .text_3 {
+  text-align     : start;
+  padding-left   : 18px;
+  width          : 100%;
+  font-size      : 20px;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  color          : #023A6E;
+  font-weight    : 600;
+  font-family    : alibaba-puhuiti, sans-serif;
+  white-space    : pre-line;
+}
+
+.wrapper .advantage dl dt .box_item:hover {
+  background: #5DDA98;
+  box-shadow: 5px 5px 0px #50C185;
+}
+
+.wrapper .advantage .faq {
+  width          : 1200px;
+  margin         : 20px auto;
+  border         : 1px solid #E2E2E2;
+  padding        : 20px;
+  border-radius  : 5px;
+  cursor         : pointer;
+  background     : url(../public/img/up_arrow.svg) no-repeat 96% 22px;
+  background-size: 12px auto;
+}
+
+.wrapper .advantage .faq span {
+  display    : block;
+  font-size  : 16px;
+  font-family: alibaba-puhuiti, sans-serif;
+  font-weight: 400;
+}
+
+.wrapper .advantage .faq span.content {
+  color      : transparent;
+  opacity    : 0;
+  border-top : 1px solid #ccc;
+  height     : 0;
+  transition : all 0.2s;
+  margin-top : 0;
+  padding-top: 0;
+}
+
+.wrapper .advantage .faq.active {
+  border         : 1px solid #5DDA98;
+  background     : url(../public/img/down_arrow.svg) no-repeat 96% 20px;
+  background-size: 22px auto;
+}
+
+.wrapper .advantage .faq.active span {
+  color: #5DDA98;
+}
+
+.wrapper .advantage .faq.active .content {
+  margin-top : 20px;
+  padding-top: 20px;
+  opacity    : 1;
+  color      : #333;
+  height     : 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper .banner {
+    background     : #d5f7e6 url(../public/img/banner.jpg) no-repeat center;
+    background-size: auto 100%;
+    height         : 425px;
+  }
+
+  .wrapper .banner .cow {
+    background     : url(../public/img/cow.png) no-repeat center;
+    width          : 70%;
+    background-size: 100% auto;
+    left           : 15px;
+    top            : 155px;
+    height         : 310px;
+    opacity        : 0.6;
+  }
+
+  .wrapper .banner .text {
+    left       : 30px;
+    width      : 100%;
+    margin-left: 0;
+  }
+
+  .wrapper .banner .text h1 {
+    background-size: auto 100%;
+    height         : 60px;
+    margin-bottom  : 20px;
+    margin-top     : 45px;
+  }
+
+  .wrapper .banner .text p {
+    font-size: 14px;
+  }
+
+  .wrapper .banner .text p button {
+    font-size    : 14px;
+    font-weight  : lighter;
+    padding      : 10px 20px;
+    border       : 2px solid transparent;
+    border-radius: 3px;
+    margin-right : 20px;
+    cursor       : pointer;
+    margin-top   : 25px;
+    display      : block;
+  }
+
+  .wrapper .banner .text p button.lauch {
+    color      : #fff;
+    font-weight: 500;
+    width      : 135px;
+  }
+
+  .wrapper .banner .text p button.docs {
+    background   : none;
+    border       : 2px solid #06366A;
+    color        : #06366A;
+    font-size    : 14px;
+    font-weight  : 500;
+    padding      : 10px 20px;
+    width        : 150px;
+    margin-bottom: 10px;
+  }
+
+  .wrapper .faq {
+    color: #033A6E;
+  }
+
+  .wrapper .data {
+    padding: 20px 0;
+    height : 340px;
+  }
+
+  .wrapper .data ul {
+    width      : 100%;
+    white-space: normal;
+    margin     : 0;
+  }
+
+  .wrapper .data ul li {
+    margin: 15px 0;
+    width : 100%;
+  }
+
+  .wrapper .data ul li h1 {
+    font-size: 12px;
+  }
+
+  .wrapper .data ul li span {
+    font-size: 28px;
+  }
+
+  .wrapper .advantage {
+    background: #f9f9f9;
+    padding   : 30px 0;
+    position  : relative;
+  }
+
+  .wrapper .advantage.bg_white {
+    background: #fff;
+  }
+
+  .wrapper .advantage .decoration1 {
+    background     : url(../public/img/decoration1.png) no-repeat center;
+    position       : absolute;
+    background-size: 100% auto;
+    width          : 120px;
+    height         : 140px;
+    top            : 570px;
+    left           : 50%;
+    margin-left    : 580px;
+  }
+
+  .wrapper .advantage .decoration2 {
+    background     : url(../public/img/decoration2.png) no-repeat center;
+    position       : absolute;
+    background-size: 100% auto;
+    width          : 140px;
+    height         : 140px;
+    top            : 360px;
+    left           : -60px;
+  }
+
+  .wrapper .advantage .decoration3 {
+    background     : url(../public/img/decoration2.png) no-repeat center;
+    position       : absolute;
+    background-size: 100% auto;
+    width          : 140px;
+    height         : 140px;
+    top            : 0;
+    left           : 100px;
+  }
+
+  .wrapper .advantage .decoration4 {
+    background     : url(../public/img/decoration1.png) no-repeat center;
+    position       : absolute;
+    background-size: 100% auto;
+    width          : 100px;
+    height         : 100px;
+    top            : 360px;
+    left           : 200px;
+  }
+
+  .wrapper .advantage .decoration5 {
+    background     : url(../public/img/decoration2.png) no-repeat center;
+    position       : absolute;
+    background-size: 100% auto;
+    width          : 140px;
+    height         : 140px;
+    top            : 230px;
+    right          : -50px;
+  }
+
+  .wrapper .advantage h1 {
+    font-size    : 24px;
+    text-align   : center;
+    color        : #5DDA98;
+    margin-bottom: 40px;
+    font-family  : alibaba-puhuiti, sans-serif;
+    font-weight  : 700;
+  }
+
+  .wrapper .advantage ul {
+    width      : 100%;
+    white-space: normal;
+  }
+
+  .wrapper .advantage ul li {
+    width     : 95%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    height    : auto;
+  }
+
+  .wrapper .advantage dl {
+    white-space: normal;
+  }
+
+  .wrapper .advantage dl dt {
+    box-sizing: border-box;
+    width     : 90%;
+    padding   : 0px 10px;
+    margin    : 10px 0;
+    height    : auto;
+  }
+
+  .wrapper .advantage dl dt .box_item {
+    background   : #dcf5e6;
+    display      : flex;
+    padding      : 20px 15px;
+    box-sizing   : content-box;
+    border-radius: 10px;
+    box-shadow   : 5px 5px 0px #B3D5C3;
+  }
+
+  .wrapper .advantage dl dt .box_item p {
+    text-align     : center;
+    width          : 100%;
+    font-size      : 16px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    color          : #023A6E;
+    font-weight    : 600;
+    font-family    : alibaba-puhuiti, sans-serif;
+    white-space    : pre-line;
+  }
+
+  .wrapper .advantage dl dt .box_item .text_3 {
+    text-align     : start;
+    padding-left   : 18px;
+    width          : 100%;
+    font-size      : 14px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    color          : #023A6E;
+    font-weight    : 600;
+    font-family    : alibaba-puhuiti, sans-serif;
+    white-space    : pre-line;
+  }
+
+  .wrapper .advantage dl dt .box_item:hover {
+    background: #5DDA98;
+    box-shadow: 5px 5px 0px #50C185;
+  }
+
+  .wrapper .advantage .faq {
+    width          : 90%;
+    box-sizing     : border-box;
+    padding        : 0 10px;
+    margin         : 20px auto;
+    border         : 1px solid #E2E2E2;
+    padding        : 20px;
+    border-radius  : 5px;
+    cursor         : pointer;
+    background     : url(../public/img/up_arrow.svg) no-repeat 96% 22px;
+    background-size: 12px auto;
+  }
+
+  .wrapper .advantage .faq span {
+    display    : block;
+    font-size  : 16px;
+    font-family: alibaba-puhuiti, sans-serif;
+    font-weight: 400;
+  }
+
+  .wrapper .advantage .faq span.content {
+    color      : transparent;
+    opacity    : 0;
+    border-top : 1px solid #ccc;
+    height     : 0;
+    transition : all 0.2s;
+    margin-top : 0;
+    padding-top: 0;
+  }
+
+  .wrapper .advantage .faq.active {
+    border         : 1px solid #5DDA98;
+    background     : url(../public/img/down_arrow.svg) no-repeat 96% 20px;
+    background-size: 22px auto;
+  }
+
+  .wrapper .advantage .faq.active span {
+    color: #5DDA98;
+  }
+
+  .wrapper .advantage .faq.active .content {
+    margin-top : 20px;
+    padding-top: 20px;
+    opacity    : 1;
+    color      : #333;
+    height     : auto;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    transform: scale(1);
+  }
+
+  70%,
+  73% {
+    transform: scale(1) rotate(-1deg);
+  }
+
+  77%,
+  83%,
+  90%,
+  97% {
+    transform: scale(1) rotate(1deg);
+  }
+
+  80%,
+  87%,
+  93% {
+    transform: scale(1) rotate(-1deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}

@@ -1,0 +1,91 @@
+.locales {
+    float    : left;
+    margin   : 0 0.1389rem 0 0.1389rem;
+    font-size: 0.23333333333333334rem;
+    position : relative;
+}
+
+.locales:hover ul {
+    display: block;
+}
+
+.locales span {
+    padding : 0.03333333333333333rem 0.1389rem;
+    cursor  : pointer;
+    position: relative;
+    width   : 0.8333333333333334rem;
+    display : inline-block;
+}
+
+.locales span i {
+    position: absolute;
+    right   : -0.14rem;
+    top     : 0.23333333333333334rem;
+}
+
+.locales span i::before {
+    content         : "";
+    border-left     : 5px solid transparent;
+    border-right    : 5px solid transparent;
+    bottom          : -0.08333333333333333rem;
+    left            : 50%;
+    margin-left     : -0.11109999999999999rem;
+    border-top-color: #fff;
+    border-top-style: solid;
+    border-top-width: 0.1rem;
+}
+
+.locales ul {
+    position : absolute;
+    font-size: 0.22223333333333334rem;
+    left     : 0;
+    right    : 0;
+    top      : 0.4rem;
+    display  : none;
+}
+
+.locales ul li {
+    padding: 0.06943333333333333rem 0.1389rem;
+    cursor : pointer;
+}
+
+.locales ul li:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 500px) {
+    .locales {
+        position: absolute;
+        top     : 18.2rem;
+        right   : 1rem;
+        z-index : 99;
+    }
+
+    .locales.hide {
+        display: none;
+    }
+
+    .locales:hover ul {
+        display: block;
+    }
+
+    .locales span {
+        display: none;
+    }
+
+    .locales ul {
+        position   : relative;
+        display    : block;
+        font-size  : 0.8rem;
+        white-space: nowrap;
+    }
+
+    .locales ul li {
+        padding: 0rem 0.5rem;
+        display: inline-block;
+    }
+
+    .locales ul li:first-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
+    }
+}

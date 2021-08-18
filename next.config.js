@@ -1,17 +1,19 @@
-const { nextI18NextRewrites } = require('next-i18next/rewrites')
-const withImages = require('next-images')
-const withCss = require('@zeit/next-css')
-const withLess = require('@zeit/next-less')
+const path = require('path');
+const { nextI18NextRewrites } = require('next-i18next/rewrites');
 
-const localeSubpaths = {}
+const localeSubpaths = {};
 
-module.exports = withCss(withLess(withImages({
-    rewrites: async () => nextI18NextRewrites(localeSubpaths),
-    publicRuntimeConfig: {
-        localeSubpaths,
-    },
-    cssModules: true,
-    webpack: function (config) {
-        return config;
-    }
-})))
+module.exports = {
+  rewrites: async () => nextI18NextRewrites(localeSubpaths),
+  images: {
+    disadisableStaticImages: true,
+  },
+  publicRuntimeConfig: {
+    localeSubpaths,
+  },
+  cleanDistDir: true,
+  cssModules: true,
+  webpack: function (config) {
+    return config;
+  },
+};

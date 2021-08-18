@@ -4,9 +4,10 @@ body {
   font-family: alibaba-puhuiti, sans-serif;
   overflow-x: hidden;
   color: #596a7a;
+  .test{
+    color: #596a7a;
+  }
 }
-
-.wrapper {}
 
 .header {
   padding: 0px 24px;
@@ -36,8 +37,6 @@ body {
     }
   }
 }
-
-.container {}
 
 
 .footer {
@@ -135,6 +134,7 @@ body {
     padding-left: 90px;
   }
 }
+
 
 @media screen and (max-width: 500px) {
   .header {

@@ -1,14 +1,23 @@
-import App from 'next/app'
-import { appWithTranslation } from '../i18n'
-import { UseWalletProvider } from 'use-wallet'
+import App from 'next/app';
+import { appWithTranslation } from '../i18n';
+import { UseWalletProvider } from 'use-wallet';
 
-const MyApp = ({ Component, pageProps }) => <UseWalletProvider
+import '../styles/_common.css';
+import '../styles/home.module.scss';
+
+const MyApp = ({ Component, pageProps }) => (
+  <UseWalletProvider
     chainId={65}
     connectors={{
-        walletconnect: { rpcUrl: 'http://okexchaintest.okexcn.com:26659' }
+      walletconnect: { rpcUrl: 'http://okexchaintest.okexcn.com:26659' },
     }}
-><Component {...pageProps} /></UseWalletProvider>
+  >
+    <Component {...pageProps} />
+  </UseWalletProvider>
+);
 
-MyApp.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) })
+MyApp.getInitialProps = async (appContext) => ({
+  ...(await App.getInitialProps(appContext)),
+});
 
-export default appWithTranslation(MyApp)
+export default appWithTranslation(MyApp);
