@@ -2,7 +2,7 @@
 const fs = require('fs-extra');
 console.log('-> Copying locales directory...');
 // Path to locales directory
-const localeSrc = './public/static/locales';
+const localeSrc = './locales';
 // Path to default-lambda destination
 const localeDest = './.serverless_nextjs/default-lambda/static/locales';
 // Copy Files over recursively
