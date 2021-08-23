@@ -6,6 +6,6 @@ module.exports = new NextI18Next({
   defaultLanguage: 'en',
   otherLanguages: ['cn'],
   localeSubpaths,
-  localePath: path.resolve('./public/static/locales'),
+  localePath: path.resolve('./public/locales'),
   shallowRender: true
 })
